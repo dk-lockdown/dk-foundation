@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dk-foundation" />
+        <module name="dk-foundation-common" />
+        <module name="dk-foundation-engine-declare-datasource" />
+        <module name="dk-foundation-engine-sharding-jdbc" />
+        <module name="dk-foundation-quickwebstart-sharding-jdbc" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dk-foundation" target="1.5" />
+      <module name="dk-foundation-common" target="1.8" />
+      <module name="dk-foundation-engine-declare-datasource" target="1.8" />
+      <module name="dk-foundation-engine-sharding-jdbc" target="1.8" />
+      <module name="dk-foundation-gateway" target="1.8" />
+      <module name="dk-foundation-quickwebstart-sharding-jdbc" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
