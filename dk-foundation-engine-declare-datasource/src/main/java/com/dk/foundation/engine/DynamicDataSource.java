@@ -1,5 +1,6 @@
 package com.dk.foundation.engine;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 
 import javax.sql.DataSource;
@@ -22,6 +23,10 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
     @Override
     protected Object determineCurrentLookupKey() {
         String dataSourceKey = DynamicDataSourceKey.getDataSourceKey();
+        if(StringUtils.isBlank(dataSourceKey))
+        {
+            return DynamicDataSourceKey.MASTER;
+        }
         if (dataSourceKey.equals(DynamicDataSourceKey.READ_RANDOM_PROXY)) {
             if (dataSourceKeys != null && dataSourceKeys.size() > 0) {
                 List<String> readDataSourceKeys = dataSourceKeys.stream().filter(s->!s.equals(DynamicDataSourceKey.MASTER)).collect(Collectors.toList());
