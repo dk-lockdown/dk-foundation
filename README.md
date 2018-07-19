@@ -17,7 +17,7 @@ ps:如果你的项目涉及到分库分表，可使用sharding-jdbc包，或选�
 
 添加项目依赖
 ```
-		<dependency>
+        <dependency>
             <groupId>com.dk.foundation</groupId>
             <artifactId>dk-foundation-engine-declare-datasource</artifactId>
             <version>1.0-SNAPSHOT</version>
