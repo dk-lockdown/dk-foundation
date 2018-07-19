@@ -25,6 +25,6 @@ public class DataSourceTransactionManagerConfiguration extends DataSourceTransac
     @Bean(name = "transactionManager")
     public DataSourceTransactionManager transactionManagers() {
         logger.info("-------------------- transactionManager init ---------------------");
-        return new DataSourceTransactionManager(SpringContextHolder.getBean("myBatisDataSource"));
+        return new DynamicDataSourceTransactionManager(SpringContextHolder.getBean("myBatisDataSource"));
     }
 }
