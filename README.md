@@ -70,4 +70,4 @@ public void insert()
     }
 }
 ```
-在使用DynamicDataSourcePlugin并使用@DataSource注解的同时，开启了事务，如上代码所示，对于userMapper.selectListBySQL()，DynamicDataSourcePlugin和@DataSource都会选择从数据源，但实际上却走了主数据源，这是因为开启了事务。
+在使用DynamicDataSourcePlugin并使用@DataSource注解的同时，开启了事务，如上代码所示，对于userMapper.selectListBySQL()，DynamicDataSourcePlugin和@DataSource都会选择从数据源，对于userMapper.insert(user)，DynamicDataSourcePlugin选择主数据源，但实际上却都走了主数据源，这是因为开启了事务。
