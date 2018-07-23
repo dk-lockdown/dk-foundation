@@ -22,6 +22,12 @@
         </plugins>
     </build>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.9.RELEASE</version>
+    </parent>
+
     <!-- 使用spring cloud必须引入 -->
     <dependencyManagement>
         <dependencies>
@@ -37,7 +43,6 @@
 
     <properties>
         <spring.context.version>4.3.12.RELEASE</spring.context.version>
-        <spring.boot.version>1.5.9.RELEASE</spring.boot.version>
         <spring.cloud.feign.version>1.4.4.RELEASE</spring.cloud.feign.version>
         <swagger.ui.version>2.7.0</swagger.ui.version>
         <springfox.swagger2.version>2.7.0</springfox.swagger2.version>
@@ -58,12 +63,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring.boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-feign</artifactId>
-            <!--<version>${spring.cloud.feign.version}</version>-->
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
@@ -83,7 +86,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
-            <version>${spring.boot.version}</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
