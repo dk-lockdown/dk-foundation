@@ -4,8 +4,8 @@ import io.shardingjdbc.core.api.MasterSlaveDataSourceFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -22,12 +22,12 @@ import java.sql.SQLException;
 public class DataSourceConfiguration {
     final static Logger logger = LoggerFactory.getLogger(DataSourceConfiguration.class);
 
-    @Value("${dataSource.useMasterSlave:false}")
+    @Value("${data-source.useMasterSlave:false}")
     private boolean useMasterSlaveDataSource;
 
     @Bean(name = "myBatisDataSource")
     @Primary
-    @ConfigurationProperties(prefix = "dataSource.singleDB")
+    @ConfigurationProperties(prefix = "data-source.single-db")
     public DataSource userDataSource() throws IOException, SQLException {
         if(!useMasterSlaveDataSource) {
             logger.info("-------------------- singleDB DataSource init ---------------------");

@@ -22,7 +22,7 @@ public class DataSourceTransactionManagerConfiguration extends DataSourceTransac
      * MyBatis自动参与到spring事务管理中，无需额外配置，只要org.mybatis.spring.SqlSessionFactoryBean引用的数据源与DataSourceTransactionManager引用的数据源一致即可，否则事务管理会不起作用。
      * @return
      */
-    @Bean(name = "transactionManager")
+    @Bean(name = "myTransactionManager")
     public DataSourceTransactionManager transactionManagers() {
         logger.info("-------------------- transactionManager init ---------------------");
         return new DynamicDataSourceTransactionManager(SpringContextHolder.getBean("myBatisDataSource"));
