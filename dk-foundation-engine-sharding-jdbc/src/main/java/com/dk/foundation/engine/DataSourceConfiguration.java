@@ -1,6 +1,6 @@
 package com.dk.foundation.engine;
 
-import io.shardingjdbc.core.api.MasterSlaveDataSourceFactory;
+import io.shardingsphere.shardingjdbc.api.yaml.YamlMasterSlaveDataSourceFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -34,7 +34,7 @@ public class DataSourceConfiguration {
             return DataSourceBuilder.create().build();
         }else {
             logger.info("-------------------- masterSlave DataSource init ---------------------");
-            DataSource dataSource = MasterSlaveDataSourceFactory.createDataSource(new File(
+            DataSource dataSource = YamlMasterSlaveDataSourceFactory.createDataSource(new File(
                     DataSourceConfiguration.class.getResource("/META-INF/yamlMasterSlave.yaml").getFile()));
             return dataSource;
         }
