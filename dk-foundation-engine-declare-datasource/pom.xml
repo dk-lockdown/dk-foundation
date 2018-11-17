@@ -25,7 +25,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.9.RELEASE</version>
+        <version>1.5.17.RELEASE</version>
     </parent>
 
     <!-- 使用spring cloud必须引入 -->
@@ -48,7 +48,7 @@
         <springfox.swagger2.version>2.7.0</springfox.swagger2.version>
         <druid.version>1.1.6</druid.version>
         <mybatis.starter.version>1.3.2</mybatis.starter.version>
-        <mysql.connector.version>8.0.8-dmr</mysql.connector.version>
+        <mysql.connector.version>8.0.13</mysql.connector.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <sharding.jdbc.version>2.0.1</sharding.jdbc.version>
         <fastjson.version>1.2.44</fastjson.version>
