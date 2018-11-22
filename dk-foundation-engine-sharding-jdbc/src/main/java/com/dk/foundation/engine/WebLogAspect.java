@@ -28,7 +28,7 @@ public class WebLogAspect {
     @Value("${system.model:prod}")
     private String system_mode;
 
-    @Pointcut("execution(public * com.dk.*..modules..*.controller..*.*(..)) ")
+    @Pointcut("execution(public * com.dk..worker..controller..*.*(..)) ")
     public void webLog() {
     }
 

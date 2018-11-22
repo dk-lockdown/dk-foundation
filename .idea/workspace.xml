@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa9fc2f0-73ab-472c-a152-fbab1dc5c096" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/PropertyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/dynamicdatasource/DataSourceUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/dynamicdatasource/DynamicDataSourceConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/shardingjdbc/common/SpringBootConfigMapConfigurationProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/shardingjdbc/common/SpringBootPropertiesConfigurationProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/shardingjdbc/masterslave/SpringBootMasterSlaveRuleConfigurationProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/shardingjdbc/sharding/SpringBootShardingRuleConfigurationProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/DataSourceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/DataSourceConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/DataSourceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/DataSourceConfiguration.java" afterDir="false" />
-    </list>
+    <list default="true" id="fa9fc2f0-73ab-472c-a152-fbab1dc5c096" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/dk-foundation-quickwebstart/target/" />
@@ -81,9 +70,10 @@
       <file leaf-file-name="DataSourceConfiguration.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/DataSourceConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="528">
+              <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#2260#2290#0" expanded="true" />
               </folding>
             </state>
@@ -232,8 +222,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="342" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="830" />
@@ -690,15 +679,16 @@
       <workItem from="1532072666609" duration="1461000" />
       <workItem from="1532316007512" duration="8188000" />
       <workItem from="1532328782051" duration="958000" />
-      <workItem from="1542703338302" duration="700000" />
+      <workItem from="1542703338302" duration="889000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204737000" />
+    <option name="totallyTimeSpent" value="204926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="342" y="23" width="1440" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1070,9 +1060,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/DataSourceConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="528">
+          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#2260#2290#0" expanded="true" />
           </folding>
         </state>
