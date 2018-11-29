@@ -32,7 +32,6 @@
     <properties>
         <spring-cloud.version>Greenwich.M1</spring-cloud.version>
         <jackson.databind.version>2.9.7</jackson.databind.version>
-        <spring.context.version>4.3.12.RELEASE</spring.context.version>
         <spring.cloud.feign.version>1.4.4.RELEASE</spring.cloud.feign.version>
         <swagger.ui.version>2.7.0</swagger.ui.version>
         <springfox.swagger2.version>2.7.0</springfox.swagger2.version>
