@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ResourceLoader;
@@ -23,6 +24,7 @@ import java.util.List;
 @Configuration
 @EnableConfigurationProperties({MybatisProperties.class})
 @AutoConfigureAfter({ SpringContextHolder.class,DataSourceConfiguration.class})
+@RefreshScope
 public class MybatisConfiguration extends MybatisAutoConfiguration{
     final static Logger logger = LoggerFactory.getLogger(MybatisConfiguration.class);
 

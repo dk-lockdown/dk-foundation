@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
@@ -14,6 +15,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @Configuration
 @AutoConfigureAfter({ SpringContextHolder.class,DataSourceConfiguration.class})
+@RefreshScope
 @EnableTransactionManagement
 public class DataSourceTransactionManagerConfiguration extends DataSourceTransactionManagerAutoConfiguration {
     final static Logger logger = LoggerFactory.getLogger(DataSourceTransactionManagerConfiguration.class);

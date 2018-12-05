@@ -18,6 +18,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -39,6 +40,7 @@ import java.util.Map;
         SpringBootShardingRuleConfigurationProperties.class, SpringBootMasterSlaveRuleConfigurationProperties.class,
         SpringBootConfigMapConfigurationProperties.class, SpringBootPropertiesConfigurationProperties.class
 })
+@RefreshScope
 @RequiredArgsConstructor
 public class DataSourceConfiguration implements EnvironmentAware {
     final static Logger logger = LoggerFactory.getLogger(DataSourceConfiguration.class);
