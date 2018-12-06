@@ -15,7 +15,7 @@ public class BusinessException extends Exception {
      */
     public BusinessException(String message) {
         super(message);
-        this.code = -1;
+        this.code = 1;
         this.message = message;
     }
 
