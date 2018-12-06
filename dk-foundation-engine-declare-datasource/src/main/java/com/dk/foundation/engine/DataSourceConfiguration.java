@@ -9,7 +9,6 @@ import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,7 +27,6 @@ import java.util.Map;
  */
 @Configuration
 @EnableConfigurationProperties(DynamicDataSourceConfiguration.class)
-@RefreshScope
 @RequiredArgsConstructor
 public class DataSourceConfiguration implements EnvironmentAware {
     final static Logger logger = LoggerFactory.getLogger(DataSourceConfiguration.class);
