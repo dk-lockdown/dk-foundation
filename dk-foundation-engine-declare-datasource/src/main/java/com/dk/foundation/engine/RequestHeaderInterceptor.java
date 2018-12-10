@@ -3,6 +3,7 @@ package com.dk.foundation.engine;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.apache.tomcat.util.collections.CaseInsensitiveKeyMap;
+import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -12,6 +13,7 @@ import java.util.*;
 /**
  * Created by duguk on 2018/1/5.
  */
+@Component
 public class RequestHeaderInterceptor implements RequestInterceptor {
     @Override
     public void apply(RequestTemplate template) {
