@@ -9,7 +9,7 @@ public class Pager implements Serializable {
 
     public Integer getPageIndex() {
         if(pageIndex==null)
-            return 10;
+            return 1;
         return pageIndex;
     }
 
@@ -19,7 +19,7 @@ public class Pager implements Serializable {
 
     public Integer getPageSize() {
         if(pageSize==null)
-            return 1;
+            return 10;
         return pageSize;
     }
 
