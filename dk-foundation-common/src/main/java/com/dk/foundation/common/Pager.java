@@ -8,6 +8,8 @@ public class Pager implements Serializable {
     private Integer pageSize;
 
     public Integer getPageIndex() {
+        if(pageIndex==null)
+            return 10;
         return pageIndex;
     }
 
@@ -16,6 +18,8 @@ public class Pager implements Serializable {
     }
 
     public Integer getPageSize() {
+        if(pageSize==null)
+            return 1;
         return pageSize;
     }
 
