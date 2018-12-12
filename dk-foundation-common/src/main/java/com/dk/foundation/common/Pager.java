@@ -7,9 +7,12 @@ public class Pager implements Serializable {
 
     private Integer pageSize;
 
+    private String orderBy;
+
     public Integer getPageIndex() {
-        if(pageIndex==null)
+        if (pageIndex == null) {
             return 1;
+        }
         return pageIndex;
     }
 
@@ -18,12 +21,21 @@ public class Pager implements Serializable {
     }
 
     public Integer getPageSize() {
-        if(pageSize==null)
+        if (pageSize == null) {
             return 10;
+        }
         return pageSize;
     }
 
     public void setPageSize(Integer pageSize) {
         this.pageSize = pageSize;
+    }
+
+    public String getOrderBy() {
+        return orderBy;
+    }
+
+    public void setOrderBy(String orderBy) {
+        this.orderBy = orderBy;
     }
 }
