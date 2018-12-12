@@ -19,7 +19,7 @@ public class SchedulingConfiguration  implements SchedulingConfigurer {
     final static Logger logger = LoggerFactory.getLogger(SchedulingConfiguration.class);
 
     @Value("${system.schedule.poolsize:5}")
-    private Integer system_schedule_poolsize;
+    private Integer systemSchedulePoolsize;
 
     @Override
     public void configureTasks(ScheduledTaskRegistrar scheduledTaskRegistrar) {
@@ -29,7 +29,7 @@ public class SchedulingConfiguration  implements SchedulingConfigurer {
     @Bean(destroyMethod = "shutdown")
     public ThreadPoolTaskScheduler taskScheduler() {
         ThreadPoolTaskScheduler scheduler = new ThreadPoolTaskScheduler();
-        scheduler.setPoolSize(system_schedule_poolsize);
+        scheduler.setPoolSize(systemSchedulePoolsize);
         scheduler.setThreadNamePrefix("dispatch-");
         scheduler.setAwaitTerminationSeconds(600);
         scheduler.setErrorHandler(throwable -> logger.error("调度任务发生异常", throwable));

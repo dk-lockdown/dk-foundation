@@ -6,32 +6,32 @@ import org.apache.commons.lang3.StringUtils;
 public class DynamicDataSourceKey {
     public static final String MASTER="master";
     public static final String READ_RANDOM_PROXY="read-random-proxy";
-    private static final ThreadLocal<String> annotationKey = new ThreadLocal<>();
-    private static final ThreadLocal<String> pluginKey = new ThreadLocal<>();
+    private static final ThreadLocal<String> ANNOTATION_KEY = new ThreadLocal<>();
+    private static final ThreadLocal<String> PLUGIN_KEY = new ThreadLocal<>();
 
     public static String getDataSourceKey() {
-        String dataSourceKey = annotationKey.get();
+        String dataSourceKey = ANNOTATION_KEY.get();
         if (!StringUtils.isBlank(dataSourceKey)) {
             return dataSourceKey;
         } else {
-            return pluginKey.get();
+            return PLUGIN_KEY.get();
         }
     }
 
     public static void setDataSource(String dataSourceKey) {
-        annotationKey.set(dataSourceKey);
+        ANNOTATION_KEY.set(dataSourceKey);
     }
 
     public static void setDataSource(String dataSourceKey,boolean isAnnotationKey) {
         if (isAnnotationKey) {
-            annotationKey.set(dataSourceKey);
+            ANNOTATION_KEY.set(dataSourceKey);
         } else {
-            pluginKey.set(dataSourceKey);
+            PLUGIN_KEY.set(dataSourceKey);
         }
     }
 
     public static void clearDataSource() {
-        annotationKey.remove();
-        pluginKey.remove();
+        ANNOTATION_KEY.remove();
+        PLUGIN_KEY.remove();
     }
 }

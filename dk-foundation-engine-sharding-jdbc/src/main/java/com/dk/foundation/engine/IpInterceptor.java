@@ -57,14 +57,14 @@ public class IpInterceptor implements HandlerInterceptor {
      * @return
      */
     public boolean validation(String remoteip){
-        if(patterns==null||patterns.trim().equals("")){
+        if(patterns==null|| "".equals(patterns.trim())){
             return true;
         }
         String[] ips = patterns.trim().replaceAll("，", ",").split(",");
         for(String ip:ips){
             if(ip.trim().equals(remoteip.trim())){
                 return true;
-            }else if(ip.trim().equals("*")){
+            }else if("*".equals(ip.trim())){
                 return true;
             }
         }

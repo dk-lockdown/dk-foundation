@@ -4,17 +4,18 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.AntPathMatcher;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 /**
  * Created by duguk on 2018/1/5.
  */
-public class DefaultWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
+public class DefaultWebMvcConfigurerAdapter extends WebMvcConfigurationSupport {
     @Value("${system.secure.open:false}")
-    private String secure_open;
+    private String secureOpen;
 
     @Value("${system.secure.ip_allow:*}")
-    private String secure_ip_allow;
+    private String secureIpAllow;
 
     public void addExtInterceptors(InterceptorRegistry registry) {
 
@@ -24,8 +25,8 @@ public class DefaultWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(new CrossOriginInterceptor()).addPathPatterns("/**");
         // ip拦截器
-        if (secure_open.trim().toLowerCase().equals("true")) {
-            registry.addInterceptor(new IpInterceptor(secure_ip_allow)).addPathPatterns("/**");
+        if ("true".equals(secureOpen.trim().toLowerCase())) {
+            registry.addInterceptor(new IpInterceptor(secureIpAllow)).addPathPatterns("/**");
         }
         addExtInterceptors(registry);
         super.addInterceptors(registry);
@@ -36,5 +37,14 @@ public class DefaultWebMvcConfigurerAdapter extends WebMvcConfigurerAdapter {
         AntPathMatcher matcher = new AntPathMatcher();
         matcher.setCaseSensitive(false);
         configurer.setPathMatcher(matcher);
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("swagger-ui.html")
+                .addResourceLocations("classpath:/META-INF/resources/");
+        registry.addResourceHandler("/webjars/**")
+                .addResourceLocations("classpath:/META-INF/resources/webjars/");
+        super.addResourceHandlers(registry);
     }
 }

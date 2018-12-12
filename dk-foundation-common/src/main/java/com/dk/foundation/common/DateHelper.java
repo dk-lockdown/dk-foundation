@@ -1,11 +1,11 @@
 package com.dk.foundation.common;
 
+import org.apache.commons.lang3.time.DateFormatUtils;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
-import org.apache.commons.lang3.time.DateFormatUtils;
 
 /**
  * Created by duguk on 2018/1/5.
@@ -108,40 +108,40 @@ public class DateHelper extends org.apache.commons.lang3.time.DateUtils {
 
 	/**
 	 * 获取过去的天数
-	 * 
+	 *
 	 * @param date
 	 * @return
 	 */
 	public static long pastDays(Date date) {
-		long t = new Date().getTime() - date.getTime();
+		long t = System.currentTimeMillis() - date.getTime();
 		return t / (24 * 60 * 60 * 1000);
 	}
 
 	/**
 	 * 获取过去的小时
-	 * 
+	 *
 	 * @param date
 	 * @return
 	 */
 	public static long pastHour(Date date) {
-		long t = new Date().getTime() - date.getTime();
+		long t = System.currentTimeMillis() - date.getTime();
 		return t / (60 * 60 * 1000);
 	}
 
 	/**
 	 * 获取过去的分钟
-	 * 
+	 *
 	 * @param date
 	 * @return
 	 */
 	public static long pastMinutes(Date date) {
-		long t = new Date().getTime() - date.getTime();
+		long t = System.currentTimeMillis() - date.getTime();
 		return t / (60 * 1000);
 	}
 
 	/**
 	 * 转换为时间（天,时:分:秒.毫秒）
-	 * 
+	 *
 	 * @param timeMillis
 	 * @return
 	 */
@@ -169,8 +169,10 @@ public class DateHelper extends org.apache.commons.lang3.time.DateUtils {
 
 	public static Date currentDateAdd(int days) {
 		// 日期处理模块 (将日期加上某些天或减去天数)返回字符串
-		Calendar canlendar = Calendar.getInstance(); // java.util包
-		canlendar.add(Calendar.DATE, days); // 日期减 如果不够减会将月变动
+		// java.util包
+		Calendar canlendar = Calendar.getInstance();
+		// 日期减 如果不够减会将月变动
+		canlendar.add(Calendar.DATE, days);
 		return canlendar.getTime();
 	}
 
@@ -183,7 +185,7 @@ public class DateHelper extends org.apache.commons.lang3.time.DateUtils {
 
 	/**
 	 * 得到分钟数
-	 * 
+	 *
 	 * @param date
 	 * @param date1
 	 * @return
@@ -195,7 +197,7 @@ public class DateHelper extends org.apache.commons.lang3.time.DateUtils {
 
 	/**
 	 * 获取多少天后的日期
-	 * 
+	 *
 	 * @param date
 	 * @param day
 	 * @return
@@ -221,7 +223,7 @@ public class DateHelper extends org.apache.commons.lang3.time.DateUtils {
 
 	/**
 	 * 获取多少天后的日期
-	 * 
+	 *
 	 * @param date
 	 * @param day
 	 * @return

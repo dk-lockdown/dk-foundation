@@ -29,8 +29,8 @@ public class DynamicDataSourcePlugin implements Interceptor {
     protected static final Logger logger = LoggerFactory.getLogger(DynamicDataSourcePlugin.class);
 
     private static final String REGEX = ".*insert\\s+into.*|.*delete\\s+from\\s+.*|.*update\\s+.*set\\s+.*";
-    private static final Pattern pattern = Pattern.compile(REGEX, Pattern.CASE_INSENSITIVE);
-    private static final Map<String, String> cacheMap = new ConcurrentHashMap<>();
+    private static final Pattern PATTERN = Pattern.compile(REGEX, Pattern.CASE_INSENSITIVE);
+    private static final Map<String, String> CACHE_MAP = new ConcurrentHashMap<>();
 
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
@@ -39,7 +39,7 @@ public class DynamicDataSourcePlugin implements Interceptor {
             Object[] objects = invocation.getArgs();
             MappedStatement ms = (MappedStatement) objects[0];
             String dataSourceKey="";
-            if((dataSourceKey = cacheMap.get(ms.getId())) == null) {
+            if((dataSourceKey = CACHE_MAP.get(ms.getId())) == null) {
                 if(ms.getSqlCommandType().equals(SqlCommandType.SELECT)) {
                     //!selectKey 为自增id查询主键(SELECT LAST_INSERT_ID() )方法，使用主库
                     if(ms.getId().contains(SelectKeyGenerator.SELECT_KEY_SUFFIX)) {
@@ -47,7 +47,7 @@ public class DynamicDataSourcePlugin implements Interceptor {
                     } else {
                         BoundSql boundSql = ms.getSqlSource().getBoundSql(objects[1]);
                         String sql = boundSql.getSql().replaceAll("[\\t\\n\\r]", " ");
-                        if(pattern.matcher(sql).matches()) {
+                        if(PATTERN.matcher(sql).matches()) {
                             dataSourceKey = DynamicDataSourceKey.MASTER;
                         } else {
                             dataSourceKey = DynamicDataSourceKey.READ_RANDOM_PROXY;
@@ -57,7 +57,7 @@ public class DynamicDataSourcePlugin implements Interceptor {
                     dataSourceKey = DynamicDataSourceKey.MASTER;
                 }
                 logger.warn("Method [{}] use [{}] Strategy, SqlCommandType [{}].", ms.getId(), dataSourceKey, ms.getSqlCommandType().name());
-                cacheMap.put(ms.getId(), dataSourceKey);
+                CACHE_MAP.put(ms.getId(), dataSourceKey);
             }
             DynamicDataSourceKey.setDataSource(dataSourceKey,false);
         }

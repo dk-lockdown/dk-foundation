@@ -26,7 +26,7 @@ public class WebLogAspect {
     public static final String RESPONSE_NAME_AT_ATTRIBUTES = ServletRequestAttributes.class.getName()
             + ".ATTRIBUTE_NAME";
     @Value("${system.model:prod}")
-    private String system_mode;
+    private String systemMode;
 
     @Pointcut("execution(public * com.dk..worker..controller..*.*(..)) ")
     public void webLog() {
@@ -53,8 +53,8 @@ public class WebLogAspect {
     @AfterReturning(returning = "ret", pointcut = "webLog()")
     public void doAfterReturning(Object ret) throws Throwable {
         if (logger.isInfoEnabled()) {
-            logger.debug("system_mode:"+system_mode);
-            if (system_mode.trim().toLowerCase().equals("prod") && ret instanceof String) {
+            logger.debug("systemMode:"+systemMode);
+            if ("prod".equals(systemMode.trim().toLowerCase()) && ret instanceof String) {
                 String resp = ret.toString();
                 try {
                     int bodyindex =resp.indexOf("\"body\":");

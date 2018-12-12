@@ -7,7 +7,7 @@ import java.util.*;
  *
  * @date 2018/12/11
  */
-public class MapUtils {
+public class MapUtil {
 
     /**
      * 默认初始大小
