@@ -32,8 +32,11 @@ public class StandResponse<T> implements Serializable {
 
     public void setCode(Integer code) {
         this.code = code;
-        if(this.code==0){
+        if(this.code==SUCCESS){
             this.success=true;
+        }
+        else{
+            this.success=false;
         }
     }
 
