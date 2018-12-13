@@ -34,6 +34,8 @@
         <fastjson.version>1.2.44</fastjson.version>
         <commons.lang.version>2.6</commons.lang.version>
         <kaptcha.version>0.0.9</kaptcha.version>
+        <swagger.ui.version>2.7.0</swagger.ui.version>
+        <springfox.swagger2.version>2.7.0</springfox.swagger2.version>
     </properties>
     <dependencies>
         <dependency>
@@ -110,6 +112,16 @@
             <groupId>com.github.axet</groupId>
             <artifactId>kaptcha</artifactId>
             <version>${kaptcha.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.ui.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox.swagger2.version}</version>
         </dependency>
     </dependencies>
 </project>

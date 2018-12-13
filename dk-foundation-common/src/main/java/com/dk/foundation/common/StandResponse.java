@@ -13,17 +13,28 @@ public class StandResponse<T> implements Serializable {
     public final static int ACCESS_TOKEN_EXPIRED=401;
     public final static int SUCCESS=0;
 
-    private int code;
+    private Boolean success;
+    private Integer code;
     private String msg;
     private T data;
 
+    public Boolean getSuccess() {
+        return success;
+    }
 
-    public int getCode() {
+    public void setSuccess(Boolean success) {
+        this.success = success;
+    }
+
+    public Integer getCode() {
         return code;
     }
 
-    public void setCode(int code) {
+    public void setCode(Integer code) {
         this.code = code;
+        if(this.code==0){
+            this.success=true;
+        }
     }
 
     public String getMsg() {
