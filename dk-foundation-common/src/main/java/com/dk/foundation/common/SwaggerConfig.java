@@ -22,11 +22,15 @@ public class SwaggerConfig {
     @Value("${spring.application.name}")
     String title;
 
+    @Value("${spring.application.swagger.host}")
+    String host;
+
     @Bean
     public Docket customDocket() {
-        return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.any())
+        return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.jwell"))
                 .paths(Predicates.not(PathSelectors.regex("/error.*")))
                 .build()
+                .host(host)
                 .apiInfo(apiInfo());
     }
 
