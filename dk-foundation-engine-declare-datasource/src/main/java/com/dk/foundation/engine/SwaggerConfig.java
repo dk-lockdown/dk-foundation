@@ -1,7 +1,8 @@
-package com.dk.foundation.common;
+package com.dk.foundation.engine;
 
 import com.google.common.base.Predicates;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -17,6 +18,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Configuration
 @EnableSwagger2
+@RefreshScope
 public class SwaggerConfig {
 
     @Value("${spring.application.name}")
@@ -26,6 +28,7 @@ public class SwaggerConfig {
     String host;
 
     @Bean
+    @RefreshScope
     public Docket customDocket() {
         return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.jwell"))
                 .paths(Predicates.not(PathSelectors.regex("/error.*")))

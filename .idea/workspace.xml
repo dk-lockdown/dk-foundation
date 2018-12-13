@@ -5,7 +5,9 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa9fc2f0-73ab-472c-a152-fbab1dc5c096" name="Default" comment="" />
+    <list default="true" id="fa9fc2f0-73ab-472c-a152-fbab1dc5c096" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/dk-foundation-quickwebstart/target/" />
@@ -104,7 +106,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="1290">
               <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
             </state>
           </provider>
@@ -113,38 +115,30 @@
       <file leaf-file-name="StandResponse.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/StandResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+            <state relative-caret-position="420">
+              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
               <folding>
                 <element signature="e#677#678#0" expanded="true" />
                 <element signature="e#715#716#0" expanded="true" />
-                <element signature="e#981#982#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
-                <element signature="e#1075#1076#0" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
-                <element signature="e#1163#1164#0" expanded="true" />
-                <element signature="e#1195#1196#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/SwaggerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            <state relative-caret-position="165">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,7 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dk-foundation-reactorstart-sharding-jdbc/src/main/java/com/dk/foundation/annotation/QuickWebStartConfig.java" />
         <option value="$PROJECT_DIR$/dk-foundation-reactorstart-sharding-jdbc/src/main/java/com/dk/foundation/annotation/EnableQuickWebStart.java" />
         <option value="$PROJECT_DIR$/dk-foundation-reactor-declare-datasource/src/main/java/com/dk/foundation/annotation/ReactorStartConfig.java" />
         <option value="$PROJECT_DIR$/dk-foundation-reactor-sharding-jdbc/src/main/java/com/dk/foundation/annotation/ReactorStartConfig.java" />
@@ -242,6 +235,7 @@
         <option value="$PROJECT_DIR$/dk-foundation-common/pom.xml" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/StandResponse.java" />
+        <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/SwaggerConfig.java" />
       </list>
     </option>
   </component>
@@ -286,6 +280,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -293,12 +288,46 @@
               <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
               <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="dk-foundation-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="dk-foundation-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="dk-foundation-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="dk-foundation-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="dk-foundation-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -312,7 +341,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../kjtcloud" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -605,11 +634,12 @@
       <workItem from="1544665166529" duration="63000" />
       <workItem from="1544670855151" duration="335000" />
       <workItem from="1544681347117" duration="85000" />
+      <workItem from="1544690445595" duration="1254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211325000" />
+    <option name="totallyTimeSpent" value="212579000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -622,7 +652,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="836" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32882273" />
@@ -634,9 +663,9 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.48308524" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3289256" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.38836265" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.38836265" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32904148" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32904148" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.32980332" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.3290469" />
@@ -990,16 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1290">
@@ -1016,26 +1035,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="1290">
           <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/StandResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        <state relative-caret-position="420">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
           <folding>
             <element signature="e#677#678#0" expanded="true" />
             <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1043,7 +1054,17 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1099,11 +1120,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|dk-foundation-quickwebstart-declare-datasource</last-edited>
+          <last-edited>dk-foundation-common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1123,7 +1145,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
