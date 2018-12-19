@@ -31,6 +31,7 @@
         <aspectj.version>1.8.13</aspectj.version>
         <spring.redis.version>2.1.0.RELEASE</spring.redis.version>
         <jedis.version>2.9.0</jedis.version>
+        <redisson.version>3.9.1</redisson.version>
         <fastjson.version>1.2.44</fastjson.version>
         <commons.lang.version>2.6</commons.lang.version>
         <kaptcha.version>0.0.9</kaptcha.version>
@@ -97,6 +98,11 @@
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
             <version>${jedis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>${redisson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
