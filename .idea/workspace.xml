@@ -6,9 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa9fc2f0-73ab-472c-a152-fbab1dc5c096" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_14.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dk-foundation-common/dk-foundation-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dk-foundation-common/dk-foundation-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/dk-foundation-engine-declare-datasource.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/dk-foundation-engine-declare-datasource.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/dk-foundation-engine-sharding-jdbc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/dk-foundation-engine-sharding-jdbc.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,53 +54,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DefaultWebMvcConfigurerAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/DefaultWebMvcConfigurerAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataSourceTransactionManagerConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/DataSourceTransactionManagerConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataSourceTransactionManagerConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/DataSourceTransactionManagerConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dk-foundation-common/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1860">
-              <caret line="124" column="21" selection-start-line="124" selection-start-column="21" selection-end-line="124" selection-end-column="21" />
+            <state relative-caret-position="495">
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
+            <state relative-caret-position="238">
+              <caret line="54" column="25" lean-forward="true" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -127,7 +97,7 @@
       <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/SwaggerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
+            <state relative-caret-position="285">
               <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -136,9 +106,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/SwaggerConfig.java">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="RedisConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedisConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedissonConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedissonConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedissonDistributedLocker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedissonDistributedLocker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
@@ -180,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dk-foundation-reactor-declare-datasource/src/main/java/com/dk/foundation/annotation/ReactorStartConfig.java" />
         <option value="$PROJECT_DIR$/dk-foundation-reactor-sharding-jdbc/src/main/java/com/dk/foundation/annotation/ReactorStartConfig.java" />
         <option value="$PROJECT_DIR$/dk-foundation-reactor-declare-datasource/src/main/java/com/dk/foundation/annotation/ReactorConfig.java" />
         <option value="$PROJECT_DIR$/dk-foundation-reactor-declare-datasource/src/main/java/com/dk/foundation/annotation/EnableReactorStart.java" />
@@ -189,7 +188,6 @@
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/DynamicDataSource.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/DynamicDataSourceTransactionManager.java" />
         <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedisUtils.java" />
-        <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedisConfig.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/shardingjdbc/common/SpringBootPropertiesConfigurationProperties.java" />
         <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/PropertyUtil.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/dynamicdatasource/DataSourceUtil.java" />
@@ -226,11 +224,13 @@
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/DataSourceTransactionManagerConfiguration.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/DataSourceTransactionManagerConfiguration.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/pom.xml" />
-        <option value="$PROJECT_DIR$/dk-foundation-common/pom.xml" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/StandResponse.java" />
         <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedissonDistributedLocker.java" />
+        <option value="$PROJECT_DIR$/dk-foundation-common/pom.xml" />
       </list>
     </option>
   </component>
@@ -263,10 +263,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="836" />
+    <option name="height" value="834" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -432,19 +432,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.dk.foundation.quickwebstart" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dk.foundation.engine" />
+      <recent name="com.dk.foundation.common" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common" />
       <recent name="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine" />
       <recent name="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine" />
       <recent name="D:\git\dk-foundation" />
       <recent name="D:\DKSL\Git\dk-foundation\dk-foundation-common\src\main\java\com\dk\foundation\common" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.dk.foundation.engine" />
-      <recent name="com.dk.foundation.common" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.dk.foundation.quickwebstart" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -720,11 +720,13 @@
       <workItem from="1544670855151" duration="335000" />
       <workItem from="1544681347117" duration="85000" />
       <workItem from="1544690445595" duration="1529000" />
+      <workItem from="1545205223298" duration="119000" />
+      <workItem from="1545209391747" duration="58000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212854000" />
+    <option name="totallyTimeSpent" value="213031000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -736,7 +738,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="836" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="834" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32882273" />
@@ -745,20 +748,20 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50075644" side_tool="true" weight="0.39933994" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.27181688" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.48308524" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.48308524" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3289256" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.38836265" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3880597" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32904148" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3383405" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.32980332" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.3290469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.39933994" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.39933994" />
       <window_info active="true" anchor="bottom" id="Inspection Results" order="9" visible="true" weight="0.32882273" />
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32980332" />
       <window_info id="ZooKeeper" order="3" weight="0.329582" />
@@ -801,15 +804,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/dynamicdatasource/DynamicDataSourceConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/dynamicdatasource/DataSourceUtil.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/PageResult.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/R.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -906,9 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1070,9 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1080,9 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,9 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,20 +1086,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dk-foundation-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
-          <caret line="124" column="21" selection-start-line="124" selection-start-column="21" selection-end-line="124" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1290">
           <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
@@ -1144,7 +1112,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="285">
           <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1154,6 +1122,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dk-foundation-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedissonDistributedLocker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedissonConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="54" column="25" lean-forward="true" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
