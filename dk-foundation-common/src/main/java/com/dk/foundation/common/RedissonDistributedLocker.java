@@ -3,11 +3,14 @@ package com.dk.foundation.common;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
 
 @Component
+@ConditionalOnBean(RedissonClient.class)
 public class RedissonDistributedLocker {
     @Autowired
     RedissonClient redissonClient;
