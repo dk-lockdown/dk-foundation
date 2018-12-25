@@ -6,12 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa9fc2f0-73ab-472c-a152-fbab1dc5c096" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_14.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dk-foundation-common/dk-foundation-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dk-foundation-common/dk-foundation-common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/dk-foundation-engine-declare-datasource.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/dk-foundation-engine-declare-datasource.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/dk-foundation-engine-sharding-jdbc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/dk-foundation-engine-sharding-jdbc.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,11 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="54" column="25" lean-forward="true" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+            <state relative-caret-position="810">
+              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MD5Helper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/MD5Helper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -123,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedissonConfig.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RedissonConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedissonConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+            <state relative-caret-position="53">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -137,15 +141,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -209,7 +204,6 @@
         <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/AESHelper.java" />
         <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/DateHelper.java" />
         <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/MapUtils.java" />
-        <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/MD5Helper.java" />
         <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RSAHelper.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/IpInterceptor.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/WebLogAspect.java" />
@@ -231,6 +225,7 @@
         <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedisConfig.java" />
         <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedissonDistributedLocker.java" />
         <option value="$PROJECT_DIR$/dk-foundation-common/pom.xml" />
+        <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/MD5Helper.java" />
       </list>
     </option>
   </component>
@@ -722,11 +717,13 @@
       <workItem from="1544690445595" duration="1529000" />
       <workItem from="1545205223298" duration="119000" />
       <workItem from="1545209391747" duration="58000" />
+      <workItem from="1545271858141" duration="42000" />
+      <workItem from="1545704398521" duration="419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213031000" />
+    <option name="totallyTimeSpent" value="213492000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -753,7 +750,7 @@
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3289256" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3880597" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3383405" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34334764" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.32980332" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.3290469" />
@@ -770,10 +767,10 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
       <window_info id="Nl-Palette" order="2" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32838285" />
+      <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32882273" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -949,13 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/MD5Helper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1147,17 +1137,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedissonConfig.java">
+    <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        <state relative-caret-position="810">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml">
+    <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/MD5Helper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="54" column="25" lean-forward="true" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        <state relative-caret-position="270">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/RedissonConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
