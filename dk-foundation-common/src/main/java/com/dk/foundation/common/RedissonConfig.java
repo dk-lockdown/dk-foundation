@@ -7,23 +7,29 @@ import org.redisson.config.Config;
 import org.redisson.config.SentinelServersConfig;
 import org.redisson.config.SingleServerConfig;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 import java.util.List;
 
 @Configuration
-@ConditionalOnBean(RedisProperties.class)
+@AutoConfigureAfter({ RedisProperties.class})
+@ConditionalOnClass(RedisProperties.class)
 public class RedissonConfig {
 
     @Autowired
     RedisProperties redisProperties;
 
     @Bean
+    @Primary
     @ConditionalOnProperty(name="spring.redis.sentinel.master")
     RedissonClient redissonSentinel() {
         Config config = new Config();
@@ -46,8 +52,7 @@ public class RedissonConfig {
     }
 
     @Bean
-    @ConditionalOnMissingBean(RedissonClient.class)
-    @ConditionalOnProperty(name="spring.redis.host")
+    @ConditionalOnProperty(name="spring.redis.url")
     RedissonClient redissonSingle() {
         Config config = new Config();
         SingleServerConfig serverConfig = config.useSingleServer()
