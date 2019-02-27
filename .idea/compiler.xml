@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dk-foundation-common" />
         <module name="dk-foundation-engine-declare-datasource" />
         <module name="dk-foundation-engine-sharding-jdbc" />
         <module name="dk-foundation-quickwebstart-sharding-jdbc" />

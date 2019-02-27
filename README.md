@@ -41,7 +41,7 @@ public class Startup {
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTDConfig 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <plugins>
-        <plugin interceptor="com.dk.foundation.engine.DynamicDataSourcePlugin" />
+        <plugin interceptor="com.dk.foundation.engine.datasource.DynamicDataSourcePlugin" />
     </plugins>
 </configuration>
 ```

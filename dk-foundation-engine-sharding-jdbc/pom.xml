@@ -6,7 +6,7 @@
 
     <groupId>com.dk.foundation</groupId>
     <artifactId>dk-foundation-engine-sharding-jdbc</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>2.0-SNAPSHOT</version>
 
     <build>
         <plugins>
@@ -30,20 +30,77 @@
 
 
     <properties>
-        <spring-cloud.version>Greenwich.M1</spring-cloud.version>
+        <slf4j.api>1.7.25</slf4j.api>
+        <servlet.version>3.1.0</servlet.version>
+        <commonsl3.version>3.5</commonsl3.version>
+        <commons-codec>1.10</commons-codec>
+        <aspectj.version>1.8.13</aspectj.version>
+        <commons.lang.version>2.6</commons.lang.version>
+        <kaptcha.version>0.0.9</kaptcha.version>
+
+        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
         <jackson.databind.version>2.9.7</jackson.databind.version>
-        <spring.cloud.feign.version>1.4.4.RELEASE</spring.cloud.feign.version>
-        <apollo.version>1.1.0</apollo.version>
+
+        <spring.redis.version>2.1.0.RELEASE</spring.redis.version>
+        <jedis.version>2.9.0</jedis.version>
+        <redisson.version>3.9.1</redisson.version>
+
         <druid.version>1.1.6</druid.version>
-        <mybatis.starter.version>1.3.1</mybatis.starter.version>
-        <pagehelper.version>5.1.8</pagehelper.version>
-        <mysql.connector.version>8.0.8-dmr</mysql.connector.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <sharding.sphere.version>3.0.0</sharding.sphere.version>
+        <mysql.connector.version>8.0.13</mysql.connector.version>
+        <mybatis.starter.version>1.3.1</mybatis.starter.version>
+
+        <swagger.ui.version>2.8.0</swagger.ui.version>
+        <springfox.swagger2.version>2.8.0</springfox.swagger2.version>
+
+        <apollo.version>1.1.0</apollo.version>
+        <pagehelper.version>5.1.8</pagehelper.version>
         <fastjson.version>1.2.44</fastjson.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.4</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commonsl3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>${commons-codec}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>${commons.lang.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.axet</groupId>
+            <artifactId>kaptcha</artifactId>
+            <version>${kaptcha.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -53,6 +110,10 @@
                     <artifactId>jackson-databind</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -87,36 +148,32 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>${mybatis.starter.version}</version>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>${spring.redis.version}</version>
             <exclusions>
                 <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter</artifactId>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-aop</artifactId>
                 </exclusion>
                 <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-jdbc</artifactId>
+                    <groupId>redis.clients</groupId>
+                    <artifactId>jedis</artifactId>
                 </exclusion>
                 <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-autoconfigure</artifactId>
+                    <groupId>io.lettuce</groupId>
+                    <artifactId>lettuce-core</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper</artifactId>
-            <version>${pagehelper.version}</version>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.ctrip.framework.apollo</groupId>
-            <artifactId>apollo-client</artifactId>
-            <version>${apollo.version}</version>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>${redisson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -139,14 +196,52 @@
             <version>${sharding.sphere.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis.starter.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-jdbc</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-autoconfigure</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.ui.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox.swagger2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>${pagehelper.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ctrip.framework.apollo</groupId>
+            <artifactId>apollo-client</artifactId>
+            <version>${apollo.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dk.foundation</groupId>
-            <artifactId>dk-foundation-common</artifactId>
-            <version>2.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
@@ -184,4 +279,19 @@
             </snapshots>
         </repository>
     </repositories>
+
+    <!-- 发布 -->
+    <distributionManagement>
+        <repository>
+            <id>user-release</id>
+            <name>user-release</name>
+            <url>http://221.236.79.76:9080/nexus/content/repositories/releases/</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>user-snapshot</id>
+            <name>user-snapshot</name>
+            <url>http://221.236.79.76:9080/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
