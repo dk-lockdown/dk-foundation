@@ -279,19 +279,4 @@
             </snapshots>
         </repository>
     </repositories>
-
-    <!-- 发布 -->
-    <distributionManagement>
-        <repository>
-            <id>user-release</id>
-            <name>user-release</name>
-            <url>http://221.236.79.76:9080/nexus/content/repositories/releases/</url>
-        </repository>
-
-        <snapshotRepository>
-            <id>user-snapshot</id>
-            <name>user-snapshot</name>
-            <url>http://221.236.79.76:9080/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
 </project>
