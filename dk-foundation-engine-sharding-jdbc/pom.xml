@@ -39,7 +39,7 @@
         <kaptcha.version>0.0.9</kaptcha.version>
 
         <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
-        <jackson.databind.version>2.9.7</jackson.databind.version>
+        <jackson.databind.version>2.9.8</jackson.databind.version>
 
         <spring.redis.version>2.1.0.RELEASE</spring.redis.version>
         <jedis.version>2.9.0</jedis.version>
@@ -56,7 +56,7 @@
 
         <apollo.version>1.1.0</apollo.version>
         <pagehelper.version>5.1.8</pagehelper.version>
-        <fastjson.version>2.9.8</fastjson.version>
+        <fastjson.version>1.2.44</fastjson.version>
     </properties>
 
     <dependencies>
