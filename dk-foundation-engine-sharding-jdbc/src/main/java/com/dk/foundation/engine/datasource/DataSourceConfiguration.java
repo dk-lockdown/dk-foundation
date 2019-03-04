@@ -1,15 +1,15 @@
 package com.dk.foundation.engine.datasource;
 
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.fescar.rm.datasource.DataSourceProxy;
 import com.google.common.base.Preconditions;
 import com.dk.foundation.common.PropertyUtil;
 import com.dk.foundation.engine.datasource.shardingjdbc.common.SpringBootConfigMapConfigurationProperties;
 import com.dk.foundation.engine.datasource.shardingjdbc.common.SpringBootPropertiesConfigurationProperties;
 import com.dk.foundation.engine.datasource.shardingjdbc.masterslave.SpringBootMasterSlaveRuleConfigurationProperties;
 import com.dk.foundation.engine.datasource.shardingjdbc.sharding.SpringBootShardingRuleConfigurationProperties;
-import io.shardingsphere.core.exception.ShardingException;
 import io.shardingsphere.shardingjdbc.api.MasterSlaveDataSourceFactory;
 import io.shardingsphere.shardingjdbc.api.ShardingDataSourceFactory;
-import io.shardingsphere.shardingjdbc.util.DataSourceUtil;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -83,14 +83,42 @@ public class DataSourceConfiguration implements EnvironmentAware {
         String prefix = "sharding.jdbc.datasource.";
         String dataSources = environment.getProperty(prefix + "names");
         for (String each : dataSources.split(",")) {
-            try {
-                Map<String, Object> dataSourceProps = PropertyUtil.handle(environment, prefix + each.trim(), Map.class);
-                Preconditions.checkState(!dataSourceProps.isEmpty(), "Wrong datasource properties!");
-                DataSource dataSource = DataSourceUtil.getDataSource(dataSourceProps.get("type").toString(), dataSourceProps);
-                dataSourceMap.put(each, dataSource);
-            } catch (final ReflectiveOperationException ex) {
-                throw new ShardingException("Can't find datasource type!", ex);
-            }
+            Map<String, Object> dataSourceProps = PropertyUtil.handle(environment, prefix + each.trim(), Map.class);
+            Preconditions.checkState(!dataSourceProps.isEmpty(), "Wrong datasource properties!");
+            DruidDataSource dataSource = initDataSource(dataSourceProps.get("url").toString(), dataSourceProps.get("username").toString(), dataSourceProps.get("password").toString());
+            DataSourceProxy proxy = new DataSourceProxy(dataSource);
+            dataSourceMap.put(each, proxy);
         }
+    }
+
+    public static DruidDataSource initDataSource(String url, String username, String password) {
+        DruidDataSource druidDataSource = new DruidDataSource();
+        druidDataSource.setUrl(url);
+        druidDataSource.setUsername(username);
+        druidDataSource.setPassword(password);
+
+        try {
+            druidDataSource.setFilters("stat");
+        } catch (SQLException e) {
+            e.printStackTrace();
+            logger.error("druid filter init failed",e);
+        }
+
+        druidDataSource.setMaxActive(20);
+        druidDataSource.setInitialSize(1);
+        druidDataSource.setMaxWait(60000);
+        druidDataSource.setMinIdle(1);
+
+        druidDataSource.setTimeBetweenEvictionRunsMillis(60000);
+        druidDataSource.setMinEvictableIdleTimeMillis(300000);
+
+        druidDataSource.setValidationQuery("select 'x'");
+        druidDataSource.setTestWhileIdle(true);
+        druidDataSource.setTestOnBorrow(false);
+        druidDataSource.setTestOnReturn(false);
+        druidDataSource.setPoolPreparedStatements(true);
+        druidDataSource.setMaxOpenPreparedStatements(20);
+
+        return druidDataSource;
     }
 }

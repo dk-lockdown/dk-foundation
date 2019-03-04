@@ -1,7 +1,9 @@
 package com.dk.foundation.engine.feign;
 
+import com.alibaba.fescar.core.context.RootContext;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
+import org.apache.commons.lang.StringUtils;
 import org.apache.tomcat.util.collections.CaseInsensitiveKeyMap;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -37,6 +39,10 @@ public class RequestHeaderInterceptor implements RequestInterceptor {
             }
             template.headers(null);
             template.headers(resolvedHeaders);
+        }
+        String xid = RootContext.getXID();
+        if(StringUtils.isNotBlank(xid)){
+            template.header("Fescar-Xid",xid);
         }
     }
 }
