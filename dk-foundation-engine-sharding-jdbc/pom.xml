@@ -245,6 +245,11 @@
         </dependency>
         <dependency>
             <groupId>com.alibaba.fescar</groupId>
+            <artifactId>fescar-tm</artifactId>
+            <version>0.1.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.fescar</groupId>
             <artifactId>fescar-spring</artifactId>
             <version>0.1.2-SNAPSHOT</version>
         </dependency>
