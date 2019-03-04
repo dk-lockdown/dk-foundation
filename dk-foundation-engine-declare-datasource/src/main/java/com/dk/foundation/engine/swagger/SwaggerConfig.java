@@ -30,7 +30,7 @@ public class SwaggerConfig {
     @Bean
     @RefreshScope
     public Docket customDocket() {
-        return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.jwell"))
+        return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.dk"))
                 .paths(Predicates.not(PathSelectors.regex("/error.*")))
                 .build()
                 .host(host)
