@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>dk-foundation-engine</module>
         <module>dk-foundation-engine-sharding-jdbc</module>
         <module>dk-foundation-engine-declare-datasource</module>
     </modules>

@@ -5,7 +5,11 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa9fc2f0-73ab-472c-a152-fbab1dc5c096" name="Default" comment="" />
+    <list default="true" id="fa9fc2f0-73ab-472c-a152-fbab1dc5c096" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/dk-foundation-engine/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/dk-foundation-quickwebstart/target/" />
@@ -48,15 +52,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/swagger/SwaggerConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="32" column="112" selection-start-line="32" selection-start-column="112" selection-end-line="32" selection-end-column="112" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/swagger/SwaggerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -68,13 +63,10 @@
       <file leaf-file-name="DataSourceConfiguration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/datasource/DataSourceConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
+            <state relative-caret-position="930">
               <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3977#3978#0" expanded="true" />
-                <element signature="e#4022#4023#0" expanded="true" />
-                <element signature="e#4076#4106#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,33 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataSourceConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/DataSourceConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="150">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="255" selection-end-column="19" />
             </state>
           </provider>
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -138,8 +108,37 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+            <state relative-caret-position="3975">
+              <caret line="265" column="18" selection-start-line="265" selection-start-column="18" selection-end-line="265" selection-end-column="18" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file leaf-file-name="GlobalExceptionHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/exception/GlobalExceptionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dk-foundation-engine/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2940">
+              <caret line="196" column="21" selection-start-line="196" selection-start-column="21" selection-end-line="196" selection-end-column="21" />
             </state>
           </provider>
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -175,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/MybatisConfiguration.java" />
         <option value="$PROJECT_DIR$/dk-foundation-common/src/main/java/com/dk/foundation/common/BusinessException.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/RequestHeaderInterceptor.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/RequestHeaderInterceptor.java" />
@@ -217,15 +215,16 @@
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/redis/RedissonConfig.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/redis/RedisUtils.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/mvcconfigure/DefaultWebMvcConfigurerAdapter.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/DataSourceConfiguration.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/swagger/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/swagger/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/datasource/DataSourceConfiguration.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/feign/RequestHeaderInterceptor.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/filter/FescarXidFilter.java" />
-        <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/pom.xml" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/dk-foundation-engine/pom.xml" />
       </list>
     </option>
   </component>
@@ -266,8 +265,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,158 +277,12 @@
             <path>
               <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
               <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-declare-datasource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-declare-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-declare-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-declare-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-declare-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-declare-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-declare-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="swagger" type="462c0819:PsiDirectoryNode" />
+              <item name="dk-foundation-engine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
               <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
               <item name="dk-foundation-engine-sharding-jdbc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-sharding-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-sharding-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-sharding-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-sharding-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-sharding-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-sharding-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="datasource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-sharding-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="feign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-sharding-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-sharding-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="mvcconfigure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dk-foundation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dk-foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="dk-foundation-engine-sharding-jdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="foundation" type="462c0819:PsiDirectoryNode" />
-              <item name="engine" type="462c0819:PsiDirectoryNode" />
-              <item name="swagger" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -758,11 +611,14 @@
       <workItem from="1551679739359" duration="23000" />
       <workItem from="1551680021327" duration="73000" />
       <workItem from="1551684177168" duration="677000" />
+      <workItem from="1551685173378" duration="129000" />
+      <workItem from="1552447076863" duration="91000" />
+      <workItem from="1554196229466" duration="276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220757000" />
+    <option name="totallyTimeSpent" value="221253000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -787,9 +643,9 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.48072562" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3289256" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" visible="true" weight="0.38548753" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" weight="0.38548753" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35714287" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35714287" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.32980332" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.3290469" />
@@ -840,27 +696,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/common/IPUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2182">
-          <caret line="159" column="5" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/common/GlobalSysNoGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1355">
-          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/redis/RedisAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/redis/RedisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1073,14 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/swagger/SwaggerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1097,13 +924,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/datasource/DataSourceConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="930">
           <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3977#3978#0" expanded="true" />
-            <element signature="e#4022#4023#0" expanded="true" />
-            <element signature="e#4076#4106#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1127,16 +951,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        <state relative-caret-position="3975">
+          <caret line="265" column="18" selection-start-line="265" selection-start-column="18" selection-end-line="265" selection-end-column="18" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/exception/BusinessException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/exception/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+        <state relative-caret-position="150">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="255" selection-end-column="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dk-foundation-engine/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2940">
+          <caret line="196" column="21" selection-start-line="196" selection-start-column="21" selection-end-line="196" selection-end-column="21" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
