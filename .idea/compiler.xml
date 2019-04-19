@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dk-foundation-engine" />
         <module name="dk-foundation-engine-declare-datasource" />
         <module name="dk-foundation-engine-sharding-jdbc" />
         <module name="dk-foundation-quickwebstart-sharding-jdbc" />
@@ -14,6 +15,7 @@
     <bytecodeTargetLevel>
       <module name="dk-foundation" target="1.8" />
       <module name="dk-foundation-common" target="1.8" />
+      <module name="dk-foundation-engine" target="1.8" />
       <module name="dk-foundation-engine-declare-datasource" target="1.8" />
       <module name="dk-foundation-engine-sharding-jdbc" target="1.8" />
       <module name="dk-foundation-gateway" target="1.8" />

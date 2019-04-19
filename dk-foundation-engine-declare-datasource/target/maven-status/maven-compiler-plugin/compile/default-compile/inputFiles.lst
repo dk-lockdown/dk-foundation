@@ -1,0 +1,12 @@
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/DynamicDataSourceTransactionManager.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/MybatisConfiguration.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/DynamicDataSource.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/dynamicdatasource/DataSourceUtil.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/dynamicdatasource/DynamicDataSourceConfiguration.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/DataSourceConfiguration.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/DataSource.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/DynamicDataSourcePlugin.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/DataSourceAspect.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/DynamicDataSourceContainer.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/DataSourceTransactionManagerConfiguration.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-declare-datasource/src/main/java/com/dk/foundation/engine/datasource/DynamicDataSourceKey.java

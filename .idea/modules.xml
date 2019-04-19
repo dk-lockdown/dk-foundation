@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/dk-foundation.iml" filepath="$PROJECT_DIR$/dk-foundation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dk-foundation-engine/dk-foundation-engine.iml" filepath="$PROJECT_DIR$/dk-foundation-engine/dk-foundation-engine.iml" />
       <module fileurl="file://$PROJECT_DIR$/dk-foundation-engine-declare-datasource/dk-foundation-engine-declare-datasource.iml" filepath="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/dk-foundation-engine-declare-datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/dk-foundation-engine-sharding-jdbc.iml" filepath="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/dk-foundation-engine-sharding-jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/dk-foundation-reactorstart-sharding-jdbc/dk-foundation-quickwebstart-sharding-jdbc.iml" filepath="$PROJECT_DIR$/dk-foundation-reactorstart-sharding-jdbc/dk-foundation-quickwebstart-sharding-jdbc.iml" />

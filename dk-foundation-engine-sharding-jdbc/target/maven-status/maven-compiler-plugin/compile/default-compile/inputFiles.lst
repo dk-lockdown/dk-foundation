@@ -1,0 +1,7 @@
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/datasource/MybatisConfiguration.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/datasource/shardingjdbc/masterslave/SpringBootMasterSlaveRuleConfigurationProperties.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/datasource/shardingjdbc/common/SpringBootPropertiesConfigurationProperties.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/datasource/DataSourceConfiguration.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/datasource/shardingjdbc/sharding/SpringBootShardingRuleConfigurationProperties.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/datasource/shardingjdbc/common/SpringBootConfigMapConfigurationProperties.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine-sharding-jdbc/src/main/java/com/dk/foundation/engine/datasource/DataSourceTransactionManagerConfiguration.java
