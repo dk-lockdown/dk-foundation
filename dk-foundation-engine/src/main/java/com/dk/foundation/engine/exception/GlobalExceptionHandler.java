@@ -23,7 +23,7 @@ public class GlobalExceptionHandler {
         response.setHeader("Access-Control-Allow-Methods", "OPTIONS,GET,POST");
         StandResponse standResponse = new StandResponse();
         standResponse.setSuccess(false);
-        standResponse.setCode(StandResponse.BUSSINESS_EXCEPTION);
+        standResponse.setCode(StandResponse.BUSINESS_EXCEPTION);
         standResponse.setMsg(e.getMessage());
         return standResponse;
     }
