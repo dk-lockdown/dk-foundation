@@ -8,10 +8,10 @@ import java.io.Serializable;
 public class StandResponse<T> implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    public final static int BUSSINESS_EXCEPTION=1;
+    public final static int BUSINESS_EXCEPTION=600;
     public final static int INTERNAL_SERVER_ERROR=500;
     public final static int ACCESS_TOKEN_EXPIRED=401;
-    public final static int SUCCESS=0;
+    public final static int SUCCESS=200;
 
     private Boolean success;
     private Integer code;

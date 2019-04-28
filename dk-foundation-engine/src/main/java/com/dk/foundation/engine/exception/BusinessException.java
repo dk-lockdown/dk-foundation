@@ -1,5 +1,7 @@
 package com.dk.foundation.engine.exception;
 
+import com.dk.foundation.engine.baseentity.StandResponse;
+
 public class BusinessException extends Exception {
     private static final long serialVersionUID = 165367809284687797L;
 
@@ -15,7 +17,7 @@ public class BusinessException extends Exception {
      */
     public BusinessException(String message) {
         super(message);
-        this.code = 1;
+        this.code = StandResponse.BUSINESS_EXCEPTION;
         this.message = message;
     }
 
