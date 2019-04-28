@@ -2,7 +2,6 @@ package com.dk.foundation.engine.feign;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
-import org.apache.commons.lang.StringUtils;
 import org.apache.tomcat.util.collections.CaseInsensitiveKeyMap;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
