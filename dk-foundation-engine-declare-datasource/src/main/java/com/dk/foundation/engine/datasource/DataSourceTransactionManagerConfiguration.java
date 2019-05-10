@@ -10,6 +10,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import javax.annotation.Resource;
+import javax.sql.DataSource;
+
 /**
  * Created by duguk on 2018/1/9.
  */
@@ -25,8 +30,9 @@ public class DataSourceTransactionManagerConfiguration extends DataSourceTransac
      */
     @Primary
     @Bean(name = "myTransactionManager")
-    public DataSourceTransactionManager transactionManagers() {
+    @Resource
+    public DataSourceTransactionManager transactionManagers(DataSource myBatisDataSource) {
         logger.info("-------------------- transactionManager init ---------------------");
-        return new DynamicDataSourceTransactionManager(SpringContextHolder.getBean("myBatisDataSource"));
+        return new DynamicDataSourceTransactionManager(myBatisDataSource);
     }
 }
