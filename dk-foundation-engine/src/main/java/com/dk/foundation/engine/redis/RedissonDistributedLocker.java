@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.TimeUnit;
 
 @Component
-@AutoConfigureAfter({ RedissonClient.class})
 @ConditionalOnBean(RedissonClient.class)
 public class RedissonDistributedLocker {
     @Autowired
