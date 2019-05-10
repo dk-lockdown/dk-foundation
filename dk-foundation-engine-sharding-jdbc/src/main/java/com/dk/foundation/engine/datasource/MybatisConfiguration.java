@@ -16,6 +16,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ResourceLoader;
 
+import javax.annotation.Resource;
+import javax.sql.DataSource;
 import java.util.List;
 
 /**
@@ -23,7 +25,6 @@ import java.util.List;
  */
 @Configuration
 @EnableConfigurationProperties({MybatisProperties.class})
-@AutoConfigureAfter({ SpringContextHolder.class,DataSourceConfiguration.class})
 public class MybatisConfiguration extends MybatisAutoConfiguration{
     final static Logger logger = LoggerFactory.getLogger(MybatisConfiguration.class);
 
@@ -32,8 +33,10 @@ public class MybatisConfiguration extends MybatisAutoConfiguration{
     }
 
     @Bean
-    public SqlSessionFactory sqlSessionFactory() throws Exception {
+    @Resource
+    @Override
+    public SqlSessionFactory sqlSessionFactory(DataSource myBatisDataSource) throws Exception {
         logger.info("-------------------- sqlSessionFactory init ---------------------");
-        return super.sqlSessionFactory(SpringContextHolder.getBean("myBatisDataSource"));
+        return super.sqlSessionFactory(myBatisDataSource);
     }
 }

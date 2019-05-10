@@ -11,11 +11,13 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import javax.annotation.Resource;
+import javax.sql.DataSource;
+
 /**
  * Created by duguk on 2018/1/9.
  */
 @Configuration
-@AutoConfigureAfter({ SpringContextHolder.class,DataSourceConfiguration.class})
 @EnableTransactionManagement
 public class DataSourceTransactionManagerConfiguration extends DataSourceTransactionManagerAutoConfiguration {
     final static Logger logger = LoggerFactory.getLogger(DataSourceTransactionManagerConfiguration.class);
@@ -26,8 +28,9 @@ public class DataSourceTransactionManagerConfiguration extends DataSourceTransac
      */
     @Primary
     @Bean(name = "myTransactionManager")
-    public DataSourceTransactionManager transactionManagers() {
+    @Resource
+    public DataSourceTransactionManager transactionManagers(DataSource myBatisDataSource) {
         logger.info("-------------------- transactionManager init ---------------------");
-        return new DataSourceTransactionManager(SpringContextHolder.getBean("myBatisDataSource"));
+        return new DataSourceTransactionManager(myBatisDataSource);
     }
 }
