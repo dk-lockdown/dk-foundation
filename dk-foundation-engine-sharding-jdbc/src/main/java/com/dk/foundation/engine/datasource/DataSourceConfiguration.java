@@ -85,8 +85,6 @@ public class DataSourceConfiguration implements EnvironmentAware {
             Map<String, Object> dataSourceProps = PropertyUtil.handle(environment, prefix + each.trim(), Map.class);
             Preconditions.checkState(!dataSourceProps.isEmpty(), "Wrong datasource properties!");
             DruidDataSource dataSource = initDataSource(dataSourceProps.get("url").toString(), dataSourceProps.get("username").toString(), dataSourceProps.get("password").toString());
-//            DataSourceProxy proxy = new DataSourceProxy(dataSource);
-//            dataSourceMap.put(each, proxy);
             dataSourceMap.put(each, dataSource);
         }
     }

@@ -38,9 +38,5 @@ public class RequestHeaderInterceptor implements RequestInterceptor {
             template.headers(null);
             template.headers(resolvedHeaders);
         }
-//        String xid = RootContext.getXID();
-//        if(StringUtils.isNotBlank(xid)){
-//            template.header("Fescar-Xid",xid);
-//        }
     }
 }
