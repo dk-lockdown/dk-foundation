@@ -34,4 +34,5 @@
 /Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine/src/main/java/com/dk/foundation/engine/redis/RedisConfig.java
 /Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine/src/main/java/com/dk/foundation/common/MD5Helper.java
 /Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine/src/main/java/com/dk/foundation/engine/apollo/ApolloRefreshConfig.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine/src/main/java/com/dk/foundation/common/SnowflakeIdGenerator.java
 /Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine/src/main/java/com/dk/foundation/engine/redis/RedisAspect.java

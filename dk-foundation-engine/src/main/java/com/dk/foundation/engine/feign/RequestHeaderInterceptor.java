@@ -2,6 +2,8 @@ package com.dk.foundation.engine.feign;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
+import io.seata.core.context.RootContext;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.tomcat.util.collections.CaseInsensitiveKeyMap;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -38,9 +40,9 @@ public class RequestHeaderInterceptor implements RequestInterceptor {
             template.headers(null);
             template.headers(resolvedHeaders);
         }
-//        String xid = RootContext.getXID();
-//        if(StringUtils.isNotBlank(xid)){
-//            template.header("Fescar-Xid",xid);
-//        }
+        String xid = RootContext.getXID();
+        if(StringUtils.isNotBlank(xid)){
+            template.header("Fescar-Xid",xid);
+        }
     }
 }

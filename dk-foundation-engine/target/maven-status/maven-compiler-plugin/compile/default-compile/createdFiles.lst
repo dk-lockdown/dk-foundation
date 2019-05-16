@@ -2,6 +2,7 @@ com/dk/foundation/engine/exception/GlobalExceptionHandler.class
 com/dk/foundation/engine/feign/RequestHeaderInterceptor.class
 com/dk/foundation/engine/redis/RedisAspect.class
 com/dk/foundation/annotation/EnableEngineStart.class
+com/dk/foundation/engine/filter/FescarXidFilter.class
 com/dk/foundation/common/PropertyUtil.class
 com/dk/foundation/engine/springcontext/SpringContextHolder.class
 com/dk/foundation/common/BCrypt.class
@@ -28,6 +29,7 @@ com/dk/foundation/common/AESHelper.class
 com/dk/foundation/engine/apollo/ApolloRefreshConfig.class
 com/dk/foundation/engine/exception/BusinessException.class
 com/dk/foundation/common/ArithUtil.class
+com/dk/foundation/common/SnowflakeIdGenerator.class
 com/dk/foundation/engine/baseentity/Pager.class
 com/dk/foundation/common/GlobalSysNoGenerator.class
 com/dk/foundation/engine/scheduler/AsyncConfiguration$MdcTaskDecorator.class

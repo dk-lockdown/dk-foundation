@@ -7,6 +7,7 @@ import com.dk.foundation.engine.datasource.shardingjdbc.common.SpringBootConfigM
 import com.dk.foundation.engine.datasource.shardingjdbc.common.SpringBootPropertiesConfigurationProperties;
 import com.dk.foundation.engine.datasource.shardingjdbc.masterslave.SpringBootMasterSlaveRuleConfigurationProperties;
 import com.dk.foundation.engine.datasource.shardingjdbc.sharding.SpringBootShardingRuleConfigurationProperties;
+import io.seata.rm.datasource.DataSourceProxy;
 import io.shardingsphere.shardingjdbc.api.MasterSlaveDataSourceFactory;
 import io.shardingsphere.shardingjdbc.api.ShardingDataSourceFactory;
 import lombok.RequiredArgsConstructor;
@@ -85,9 +86,9 @@ public class DataSourceConfiguration implements EnvironmentAware {
             Map<String, Object> dataSourceProps = PropertyUtil.handle(environment, prefix + each.trim(), Map.class);
             Preconditions.checkState(!dataSourceProps.isEmpty(), "Wrong datasource properties!");
             DruidDataSource dataSource = initDataSource(dataSourceProps.get("url").toString(), dataSourceProps.get("username").toString(), dataSourceProps.get("password").toString());
-//            DataSourceProxy proxy = new DataSourceProxy(dataSource);
-//            dataSourceMap.put(each, proxy);
-            dataSourceMap.put(each, dataSource);
+            DataSourceProxy proxy = new DataSourceProxy(dataSource);
+            dataSourceMap.put(each, proxy);
+//            dataSourceMap.put(each, dataSource);
         }
     }
 
