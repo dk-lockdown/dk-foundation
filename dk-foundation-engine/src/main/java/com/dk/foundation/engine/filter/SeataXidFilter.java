@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class FescarXidFilter extends OncePerRequestFilter {
-    protected Logger logger = LoggerFactory.getLogger(FescarXidFilter.class);
+public class SeataXidFilter extends OncePerRequestFilter {
+    protected Logger logger = LoggerFactory.getLogger(SeataXidFilter.class);
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String xid = RootContext.getXID();
-        String restXid = request.getHeader("Fescar-Xid");
+        String restXid = request.getHeader("Seata-Xid");
         boolean bind = false;
         if(StringUtils.isBlank(xid)&&StringUtils.isNotBlank(restXid)){
             RootContext.bind(restXid);

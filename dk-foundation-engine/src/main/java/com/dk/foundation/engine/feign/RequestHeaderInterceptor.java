@@ -42,7 +42,7 @@ public class RequestHeaderInterceptor implements RequestInterceptor {
         }
         String xid = RootContext.getXID();
         if(StringUtils.isNotBlank(xid)){
-            template.header("Fescar-Xid",xid);
+            template.header("Seata-Xid",xid);
         }
     }
 }
