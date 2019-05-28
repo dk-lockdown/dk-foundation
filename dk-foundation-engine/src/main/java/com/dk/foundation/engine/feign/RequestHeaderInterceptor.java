@@ -22,23 +22,25 @@ public class RequestHeaderInterceptor implements RequestInterceptor {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder
                 .getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
-        Enumeration<String> headerNames = request.getHeaderNames();
-        if (headerNames != null) {
+        if (request!=null) {
+            Enumeration<String> headerNames = request.getHeaderNames();
+            if (headerNames != null) {
 
-            Map<String, Collection<String>> resolvedHeaders = new CaseInsensitiveKeyMap<>();
-            resolvedHeaders.putAll(template.headers());
+                Map<String, Collection<String>> resolvedHeaders = new CaseInsensitiveKeyMap<>();
+                resolvedHeaders.putAll(template.headers());
 
-            while (headerNames.hasMoreElements()) {
-                String name = headerNames.nextElement();
-                if(!resolvedHeaders.containsKey(name)){
-                    String values = request.getHeader(name);
-                    List<String> headers = new ArrayList<String>();
-                    headers.addAll(Arrays.asList(values));
-                    resolvedHeaders.put(name, headers);
+                while (headerNames.hasMoreElements()) {
+                    String name = headerNames.nextElement();
+                    if (!resolvedHeaders.containsKey(name)) {
+                        String values = request.getHeader(name);
+                        List<String> headers = new ArrayList<String>();
+                        headers.addAll(Arrays.asList(values));
+                        resolvedHeaders.put(name, headers);
+                    }
                 }
+                template.headers(null);
+                template.headers(resolvedHeaders);
             }
-            template.headers(null);
-            template.headers(resolvedHeaders);
         }
         String xid = RootContext.getXID();
         if(StringUtils.isNotBlank(xid)){
