@@ -21,8 +21,8 @@ public class RequestHeaderInterceptor implements RequestInterceptor {
     public void apply(RequestTemplate template) {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder
                 .getRequestAttributes();
-        HttpServletRequest request = attributes.getRequest();
-        if (request!=null) {
+        if (attributes!=null) {
+            HttpServletRequest request = attributes.getRequest();
             Enumeration<String> headerNames = request.getHeaderNames();
             if (headerNames != null) {
 
