@@ -5,7 +5,10 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa9fc2f0-73ab-472c-a152-fbab1dc5c096" name="Default" comment="" />
+    <list default="true" id="fa9fc2f0-73ab-472c-a152-fbab1dc5c096" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dk-foundation-engine/dk-foundation-engine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dk-foundation-engine/dk-foundation-engine.iml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/dk-foundation-quickwebstart/target/" />
@@ -79,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestHeaderInterceptor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RequestHeaderInterceptor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dk-foundation-engine/src/main/java/com/dk/foundation/engine/feign/RequestHeaderInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="195">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,19 +99,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="19" column="36" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RootContext.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-core/0.6.0-SNAPSHOT/seata-core-0.6.0-SNAPSHOT-sources.jar!/io/seata/core/context/RootContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-              <folding>
-                <element signature="e#1290#1291#0" expanded="true" />
-                <element signature="e#1340#1341#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -131,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dk-foundation-engine/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3000">
-              <caret line="200" column="24" selection-start-line="200" selection-start-column="24" selection-end-line="200" selection-end-column="24" />
+            <state relative-caret-position="2100">
+              <caret line="140" column="24" lean-forward="true" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
             </state>
           </provider>
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -219,7 +209,6 @@
         <option value="$PROJECT_DIR$/dk-foundation-engine/src/main/java/com/dk/foundation/engine/baseentity/PageResult.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine/src/main/java/com/dk/foundation/engine/baseentity/Pager.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine/src/main/java/com/dk/foundation/engine/mvcconfigure/DefaultWebMvcConfigurerAdapter.java" />
-        <option value="$PROJECT_DIR$/dk-foundation-engine/pom.xml" />
         <option value="$PROJECT_DIR$/dk-foundation-engine/src/main/java/com/dk/foundation/engine/filter/FescarXidFilter.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-declare-datasource/pom.xml" />
         <option value="$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml" />
@@ -231,6 +220,7 @@
         <option value="$PROJECT_DIR$/dk-foundation-engine/src/main/java/com/dk/foundation/common/DesUtil.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine/src/main/java/com/dk/foundation/engine/baseentity/TccRequest.java" />
         <option value="$PROJECT_DIR$/dk-foundation-engine/src/main/java/com/dk/foundation/engine/feign/RequestHeaderInterceptor.java" />
+        <option value="$PROJECT_DIR$/dk-foundation-engine/pom.xml" />
       </list>
     </option>
   </component>
@@ -292,8 +282,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -440,6 +428,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -777,11 +767,13 @@
       <workItem from="1559011811259" duration="104000" />
       <workItem from="1559031385164" duration="55000" />
       <workItem from="1559031960133" duration="70000" />
+      <workItem from="1559034959162" duration="38000" />
+      <workItem from="1559097317916" duration="28000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224144000" />
+    <option name="totallyTimeSpent" value="224210000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -801,12 +793,12 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" weight="0.3289256" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50143063" side_tool="true" weight="0.38661203" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.23175965" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.23175965" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.4795082" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3289256" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" visible="true" weight="0.3852459" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4985694" weight="0.3852459" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553648" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.32980332" />
@@ -1021,14 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dk-foundation-engine/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3000">
-          <caret line="200" column="24" selection-start-line="200" selection-start-column="24" selection-end-line="200" selection-end-column="24" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine-sharding-jdbc/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1410">
@@ -1061,17 +1045,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-core/0.6.0-SNAPSHOT/seata-core-0.6.0-SNAPSHOT-sources.jar!/io/seata/core/context/RootContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-          <folding>
-            <element signature="e#1290#1291#0" expanded="true" />
-            <element signature="e#1340#1341#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/seata/seata-core/0.6.0-SNAPSHOT/seata-core-0.6.0-SNAPSHOT-sources.jar!/io/seata/core/context/RootContext.java" />
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine/src/main/java/com/dk/foundation/engine/baseentity/TccRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1088,13 +1062,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dk-foundation-engine/src/main/java/com/dk/foundation/engine/feign/RequestHeaderInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="195">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dk-foundation-engine/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="140" column="24" lean-forward="true" selection-start-line="140" selection-start-column="24" selection-end-line="140" selection-end-column="24" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
   </component>
   <component name="masterDetails">

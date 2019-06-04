@@ -2,7 +2,6 @@ com/dk/foundation/engine/exception/GlobalExceptionHandler.class
 com/dk/foundation/engine/feign/RequestHeaderInterceptor.class
 com/dk/foundation/engine/redis/RedisAspect.class
 com/dk/foundation/annotation/EnableEngineStart.class
-com/dk/foundation/engine/filter/FescarXidFilter.class
 com/dk/foundation/common/PropertyUtil.class
 com/dk/foundation/engine/springcontext/SpringContextHolder.class
 com/dk/foundation/common/BCrypt.class
@@ -15,6 +14,7 @@ com/dk/foundation/engine/baseentity/StandResponse.class
 com/dk/foundation/engine/baseentity/PageResult.class
 com/dk/foundation/engine/redis/RedissonDistributedLocker.class
 com/dk/foundation/engine/mvcconfigure/DefaultWebMvcConfigurerAdapter.class
+com/dk/foundation/engine/baseentity/TccRequest.class
 com/dk/foundation/common/RSAHelper.class
 com/dk/foundation/engine/weblog/WebLogAspect.class
 com/dk/foundation/common/EntityConverter.class
@@ -32,6 +32,7 @@ com/dk/foundation/common/ArithUtil.class
 com/dk/foundation/common/SnowflakeIdGenerator.class
 com/dk/foundation/engine/baseentity/Pager.class
 com/dk/foundation/common/GlobalSysNoGenerator.class
+com/dk/foundation/engine/filter/SeataXidFilter.class
 com/dk/foundation/engine/scheduler/AsyncConfiguration$MdcTaskDecorator.class
 com/dk/foundation/engine/swagger/SwaggerConfig.class
 com/dk/foundation/engine/redis/RedisConfig.class
