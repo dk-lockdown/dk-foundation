@@ -1,5 +1,6 @@
 package com.dk.foundation.engine.filter;
 
+import com.dk.foundation.common.SeataConstants;
 import io.seata.core.context.RootContext;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -18,7 +19,7 @@ public class SeataXidFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
         String xid = RootContext.getXID();
-        String restXid = request.getHeader("Seata-Xid");
+        String restXid = request.getHeader(SeataConstants.XID_HEADER);
         boolean bind = false;
         if(StringUtils.isBlank(xid)&&StringUtils.isNotBlank(restXid)){
             RootContext.bind(restXid);

@@ -1,5 +1,6 @@
 package com.dk.foundation.engine.feign;
 
+import com.dk.foundation.common.SeataConstants;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import io.seata.core.context.RootContext;
@@ -21,6 +22,7 @@ public class RequestHeaderInterceptor implements RequestInterceptor {
     public void apply(RequestTemplate template) {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder
                 .getRequestAttributes();
+        boolean seataTransactionATMode = true;
         if (attributes!=null) {
             HttpServletRequest request = attributes.getRequest();
             Enumeration<String> headerNames = request.getHeaderNames();
@@ -42,9 +44,21 @@ public class RequestHeaderInterceptor implements RequestInterceptor {
                 template.headers(resolvedHeaders);
             }
         }
-        String xid = RootContext.getXID();
-        if(StringUtils.isNotBlank(xid)){
-            template.header("Seata-Xid",xid);
+        Map<String, Collection<String>> headers = template.headers();
+        if(headers!=null){
+            Collection<String> values = headers.getOrDefault(SeataConstants.TRANSACTION_MODE_HEADER,null);
+            if (values==null) {
+                values = headers.getOrDefault(SeataConstants.TRANSACTION_MODE_HEADER.toLowerCase(),null);
+            }
+            if(values!=null&&values.contains("TCC")){
+                seataTransactionATMode = false;
+            }
+        }
+        if(seataTransactionATMode) {
+            String xid = RootContext.getXID();
+            if (StringUtils.isNotBlank(xid)) {
+                template.header(SeataConstants.XID_HEADER, xid);
+            }
         }
     }
 }

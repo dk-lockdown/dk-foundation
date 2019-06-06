@@ -20,6 +20,21 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: io.seata:seata-spring:0.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.seata:seata-tm:0.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.seata:seata-core:0.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.seata:seata-common:0.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.seata:seata-discovery-core:0.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.seata:seata-config-core:0.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.typesafe:config:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.29.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.seata:seata-rm-datasource:0.6.0" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:druid:1.1.12" level="project" />
+    <orderEntry type="library" name="Maven: com.github.ben-manes.caffeine:caffeine:2.6.2" level="project" />
+    <orderEntry type="library" name="Maven: io.seata:seata-tcc:0.6.0" level="project" />
+    <orderEntry type="library" name="Maven: io.seata:seata-rm:0.6.0" level="project" />
+    <orderEntry type="library" name="Maven: cglib:cglib:3.1" level="project" />
+    <orderEntry type="library" name="Maven: org.ow2.asm:asm:4.2" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.4" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.2.3" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.2.3" level="project" />
@@ -97,7 +112,7 @@
     <orderEntry type="library" name="Maven: com.netflix.hystrix:hystrix-core:1.5.18" level="project" />
     <orderEntry type="library" name="Maven: io.reactivex:rxjava:1.3.8" level="project" />
     <orderEntry type="library" name="Maven: org.hdrhistogram:HdrHistogram:2.1.9" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.9" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.7" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:2.1.0.RELEASE" level="project" />
