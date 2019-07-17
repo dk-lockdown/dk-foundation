@@ -1,7 +1,0 @@
-com/dk/foundation/engine/datasource/DataSourceConfiguration.class
-com/dk/foundation/engine/datasource/shardingjdbc/common/SpringBootPropertiesConfigurationProperties.class
-com/dk/foundation/engine/datasource/MybatisConfiguration.class
-com/dk/foundation/engine/datasource/shardingjdbc/masterslave/SpringBootMasterSlaveRuleConfigurationProperties.class
-com/dk/foundation/engine/datasource/shardingjdbc/common/SpringBootConfigMapConfigurationProperties.class
-com/dk/foundation/engine/datasource/DataSourceTransactionManagerConfiguration.class
-com/dk/foundation/engine/datasource/shardingjdbc/sharding/SpringBootShardingRuleConfigurationProperties.class

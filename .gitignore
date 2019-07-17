@@ -22,3 +22,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+/dk-foundation-engine/target/
+/dk-foundation-engine-sharding-jdbc/target/
+/dk-foundation-engine-declare-datasource/target/
