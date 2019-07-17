@@ -7,6 +7,7 @@
 /Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine/src/main/java/com/dk/foundation/engine/intercepter/IpInterceptor.java
 /Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine/src/main/java/com/dk/foundation/engine/scheduler/SchedulingConfiguration.java
 /Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine/src/main/java/com/dk/foundation/common/MapUtil.java
+/Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine/src/main/java/com/dk/foundation/common/SeataConstants.java
 /Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine/src/main/java/com/dk/foundation/engine/swagger/SwaggerConfig.java
 /Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine/src/main/java/com/dk/foundation/common/ArithUtil.java
 /Users/scottlewis/dksl/git/dk-foundation/dk-foundation-engine/src/main/java/com/dk/foundation/common/DateHelper.java

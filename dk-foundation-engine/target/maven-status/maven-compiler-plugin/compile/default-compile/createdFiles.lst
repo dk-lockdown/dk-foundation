@@ -1,3 +1,4 @@
+com/dk/foundation/common/SeataConstants.class
 com/dk/foundation/engine/exception/GlobalExceptionHandler.class
 com/dk/foundation/engine/feign/RequestHeaderInterceptor.class
 com/dk/foundation/engine/redis/RedisAspect.class
