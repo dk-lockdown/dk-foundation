@@ -44,7 +44,7 @@
         <jedis.version>2.9.0</jedis.version>
         <redisson.version>3.9.1</redisson.version>
 
-        <swagger.ui.version>2.8.0</swagger.ui.version>
+        <swagger.ui.version>2.9.2</swagger.ui.version>
         <springfox.swagger2.version>2.9.2</springfox.swagger2.version>
 
         <apollo.version>1.1.0</apollo.version>
