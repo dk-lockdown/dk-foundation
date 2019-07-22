@@ -77,31 +77,31 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-test:5.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.xmlunit:xmlunit-core:2.6.2" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-openfeign:2.1.0.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter:2.1.0.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-context:2.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter-openfeign:2.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-starter:2.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-context:2.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-rsa:1.0.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.60" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.60" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-openfeign-core:2.1.0.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-netflix-ribbon:2.1.0.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-netflix-archaius:2.1.0.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: io.github.openfeign.form:feign-form-spring:3.5.0" level="project" />
-    <orderEntry type="library" name="Maven: io.github.openfeign.form:feign-form:3.5.0" level="project" />
-    <orderEntry type="library" name="Maven: commons-fileupload:commons-fileupload:1.3.3" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-openfeign-core:2.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-netflix-ribbon:2.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-netflix-archaius:2.1.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: io.github.openfeign.form:feign-form-spring:3.8.0" level="project" />
+    <orderEntry type="library" name="Maven: io.github.openfeign.form:feign-form:3.8.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-fileupload:commons-fileupload:1.4" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-commons:2.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.cloud:spring-cloud-commons:2.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-crypto:5.1.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: io.github.openfeign:feign-core:10.1.0" level="project" />
-    <orderEntry type="library" name="Maven: io.github.openfeign:feign-slf4j:10.1.0" level="project" />
-    <orderEntry type="library" name="Maven: io.github.openfeign:feign-hystrix:10.1.0" level="project" />
+    <orderEntry type="library" name="Maven: io.github.openfeign:feign-core:10.2.3" level="project" />
+    <orderEntry type="library" name="Maven: io.github.openfeign:feign-slf4j:10.2.3" level="project" />
+    <orderEntry type="library" name="Maven: io.github.openfeign:feign-hystrix:10.2.3" level="project" />
     <orderEntry type="library" name="Maven: com.netflix.archaius:archaius-core:0.7.6" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: commons-configuration:commons-configuration:1.8" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: commons-lang:commons-lang:2.6" level="project" />
     <orderEntry type="library" name="Maven: com.netflix.hystrix:hystrix-core:1.5.18" level="project" />
     <orderEntry type="library" name="Maven: io.reactivex:rxjava:1.3.8" level="project" />
     <orderEntry type="library" name="Maven: org.hdrhistogram:HdrHistogram:2.1.9" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.9" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.9.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.7" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-redis:2.1.0.RELEASE" level="project" />

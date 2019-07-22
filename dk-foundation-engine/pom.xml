@@ -37,7 +37,7 @@
         <aspectj.version>1.8.13</aspectj.version>
         <kaptcha.version>0.0.9</kaptcha.version>
 
-        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+        <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
         <jackson.databind.version>2.9.9.1</jackson.databind.version>
 
         <spring.redis.version>2.1.0.RELEASE</spring.redis.version>
