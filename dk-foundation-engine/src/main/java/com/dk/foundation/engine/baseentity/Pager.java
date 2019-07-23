@@ -6,7 +6,7 @@ import javax.validation.constraints.Min;
 import java.io.Serializable;
 
 public class Pager implements Serializable {
-    @Min(value = 1,message = "pageIndex必须大于或者等于1")
+    @Range(min = 1, max=500, message = "pageIndex不能超过500")
     private Integer pageIndex;
 
     @Range(min=1, max=100, message="pageSize不能超过100")
