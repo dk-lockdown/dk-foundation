@@ -26,3 +26,7 @@ hs_err_pid*
 /dk-foundation-engine/target/
 /dk-foundation-engine-sharding-jdbc/target/
 /dk-foundation-engine-declare-datasource/target/
+dk-foundation.iml
+/dk-foundation-engine/dk-foundation-engine.iml
+/dk-foundation-engine-sharding-jdbc/dk-foundation-engine-sharding-jdbc.iml
+/dk-foundation-engine-declare-datasource/dk-foundation-engine-declare-datasource.iml
