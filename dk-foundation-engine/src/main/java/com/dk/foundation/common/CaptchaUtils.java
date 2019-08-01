@@ -1,13 +1,12 @@
 package com.dk.foundation.common;
 
+import sun.misc.BASE64Encoder;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -112,6 +111,36 @@ public class CaptchaUtils {
      * @throws IOException
      */
     public static void outputImage(int w, int h, OutputStream os, String code) throws IOException{
+        BufferedImage image = outputImage(w,h,code);
+        ImageIO.write(image, "jpg", os);
+    }
+
+    /**
+     * 以base64格式输出指定验证码
+     * @param w
+     * @param h
+     * @param code
+     * @return
+     * @throws IOException
+     */
+    public static String outputImageToBase64(int w, int h, String code) throws IOException{
+        BufferedImage image = outputImage(w,h,code);
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        ImageIO.write(image, "jpg", outputStream);
+        BASE64Encoder encoder = new BASE64Encoder();
+        String base64Img = encoder.encode(outputStream.toByteArray());
+        return base64Img;
+    }
+
+    /**
+     * 生成指定验证码图片
+     * @param w
+     * @param h
+     * @param code
+     * @return
+     * @throws IOException
+     */
+    private static BufferedImage outputImage(int w, int h, String code) throws IOException{
         int verifySize = code.length();
         BufferedImage image = new BufferedImage(w, h, BufferedImage.TYPE_INT_RGB);
         Random rand = new Random();
@@ -128,16 +157,25 @@ public class CaptchaUtils {
         }
         Arrays.sort(fractions);
 
-        g2.setColor(Color.GRAY);// 设置边框色
+        /**
+         * 设置边框色
+         */
+        g2.setColor(Color.GRAY);
         g2.fillRect(0, 0, w, h);
 
         Color c = getRandColor(200, 250);
-        g2.setColor(c);// 设置背景色
+        /**
+         * 设置背景色
+         */
+        g2.setColor(c);
         g2.fillRect(0, 2, w, h-4);
 
         //绘制干扰线
         Random random = new Random();
-        g2.setColor(getRandColor(160, 200));// 设置线条的颜色
+        /**
+         * 设置线条的颜色
+         */
+        g2.setColor(getRandColor(160, 200));
         for (int i = 0; i < 20; i++) {
             int x = random.nextInt(w - 1);
             int y = random.nextInt(h - 1);
@@ -146,8 +184,11 @@ public class CaptchaUtils {
             g2.drawLine(x, y, x + xl + 40, y + yl + 20);
         }
 
-        // 添加噪点
-        float yawpRate = 0.05f;// 噪声率
+        /**
+         * 添加噪点
+         * 噪声率
+         */
+        float yawpRate = 0.05f;
         int area = (int) (yawpRate * w * h);
         for (int i = 0; i < area; i++) {
             int x = random.nextInt(w);
@@ -156,7 +197,10 @@ public class CaptchaUtils {
             image.setRGB(x, y, rgb);
         }
 
-        shear(g2, w, h, c);// 使图片扭曲
+        /**
+         * 使图片扭曲
+         */
+        shear(g2, w, h, c);
 
         g2.setColor(getRandColor(100, 160));
         int fontSize = h-4;
@@ -171,14 +215,16 @@ public class CaptchaUtils {
         }
 
         g2.dispose();
-        ImageIO.write(image, "jpg", os);
+       return image;
     }
 
     private static Color getRandColor(int fc, int bc) {
-        if (fc > 255)
+        if (fc > 255) {
             fc = 255;
-        if (bc > 255)
+        }
+        if (bc > 255) {
             bc = 255;
+        }
         int r = fc + random.nextInt(bc - fc);
         int g = fc + random.nextInt(bc - fc);
         int b = fc + random.nextInt(bc - fc);
