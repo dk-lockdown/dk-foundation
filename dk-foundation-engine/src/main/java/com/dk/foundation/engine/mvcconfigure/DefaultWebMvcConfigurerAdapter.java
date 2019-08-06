@@ -1,5 +1,10 @@
 package com.dk.foundation.engine.mvcconfigure;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.SerializeConfig;
+import com.alibaba.fastjson.serializer.SerializerFeature;
+import com.alibaba.fastjson.support.config.FastJsonConfig;
+import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import com.dk.foundation.engine.intercepter.CrossOriginInterceptor;
 import com.dk.foundation.engine.intercepter.IpInterceptor;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -14,6 +19,7 @@ import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
+import java.math.BigInteger;
 import java.util.List;
 
 /**
@@ -50,20 +56,27 @@ public class DefaultWebMvcConfigurerAdapter extends WebMvcConfigurationSupport {
 
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-        MappingJackson2HttpMessageConverter jackson2HttpMessageConverter = new MappingJackson2HttpMessageConverter();
+        FastJsonHttpMessageConverter fastConvert = new FastJsonHttpMessageConverter();
 
-        ObjectMapper objectMapper = new ObjectMapper();
+        FastJsonConfig fastJsonConfig = new FastJsonConfig();
+        JSON.DEFFAULT_DATE_FORMAT = "yyyy-MM-dd HH:mm";
+        fastJsonConfig.setSerializerFeatures(SerializerFeature.BrowserCompatible,
+                SerializerFeature.WriteNullListAsEmpty,
+                SerializerFeature.PrettyFormat,
+                SerializerFeature.WriteDateUseDateFormat,
+                SerializerFeature.WriteNullStringAsEmpty,
+                SerializerFeature.WriteMapNullValue,
+                SerializerFeature.DisableCircularReferenceDetect);
         /**
-         * 序列换成json时,将所有的long变成string
-         * 因为js中得数字类型不能包含所有的java long值
+         * 解决Long转json精度丢失的问题
          */
-        SimpleModule simpleModule = new SimpleModule();
-        simpleModule.addSerializer(Long.class, ToStringSerializer.instance);
-        simpleModule.addSerializer(Long.TYPE, ToStringSerializer.instance);
-        objectMapper.registerModule(simpleModule);
-
-        jackson2HttpMessageConverter.setObjectMapper(objectMapper);
-        converters.add(jackson2HttpMessageConverter);
+        SerializeConfig serializeConfig = SerializeConfig.globalInstance;
+        serializeConfig.put(BigInteger.class, ToStringSerializer.instance);
+        serializeConfig.put(Long.class, ToStringSerializer.instance);
+        serializeConfig.put(Long.TYPE, ToStringSerializer.instance);
+        fastJsonConfig.setSerializeConfig(serializeConfig);
+        fastConvert.setFastJsonConfig(fastJsonConfig);
+        converters.add(fastConvert);
     }
 
     @Override
