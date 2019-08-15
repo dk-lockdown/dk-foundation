@@ -44,7 +44,7 @@ public class PageResult<T> implements Serializable {
 		this.totalPage = (int)Math.ceil((double)totalCount/pageSize);
 	}
 
-	public long getTotalCount() {
+	public int getTotalCount() {
 		return totalCount;
 	}
 
