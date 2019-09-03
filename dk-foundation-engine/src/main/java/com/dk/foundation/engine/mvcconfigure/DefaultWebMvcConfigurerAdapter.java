@@ -63,7 +63,6 @@ public class DefaultWebMvcConfigurerAdapter extends WebMvcConfigurationSupport {
                 SerializerFeature.WriteNullListAsEmpty,
                 SerializerFeature.PrettyFormat,
                 SerializerFeature.WriteDateUseDateFormat,
-                SerializerFeature.WriteNullStringAsEmpty,
                 SerializerFeature.WriteMapNullValue,
                 SerializerFeature.DisableCircularReferenceDetect);
         /**

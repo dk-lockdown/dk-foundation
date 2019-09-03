@@ -116,6 +116,7 @@ public class DataSourceConfiguration implements EnvironmentAware {
         druidDataSource.setTestOnReturn(false);
         druidDataSource.setPoolPreparedStatements(true);
         druidDataSource.setMaxOpenPreparedStatements(20);
+        druidDataSource.setKeepAlive(true);
 
         return druidDataSource;
     }
