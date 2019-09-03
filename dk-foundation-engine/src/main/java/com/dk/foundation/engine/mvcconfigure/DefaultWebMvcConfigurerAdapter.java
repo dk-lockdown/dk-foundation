@@ -60,7 +60,6 @@ public class DefaultWebMvcConfigurerAdapter extends WebMvcConfigurationSupport {
         FastJsonConfig fastJsonConfig = new FastJsonConfig();
         JSON.DEFFAULT_DATE_FORMAT = "yyyy-MM-dd HH:mm";
         fastJsonConfig.setSerializerFeatures(SerializerFeature.BrowserCompatible,
-                SerializerFeature.WriteNullListAsEmpty,
                 SerializerFeature.PrettyFormat,
                 SerializerFeature.WriteDateUseDateFormat,
                 SerializerFeature.WriteMapNullValue,
