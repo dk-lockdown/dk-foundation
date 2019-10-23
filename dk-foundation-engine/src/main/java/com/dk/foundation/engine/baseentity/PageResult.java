@@ -11,7 +11,7 @@ public class PageResult<T> implements Serializable {
 	/**
 	 * 总记录数
 	 */
-	private long totalCount;
+	private int totalCount;
 	/**
 	 * 每页记录数
 	 */
@@ -38,18 +38,18 @@ public class PageResult<T> implements Serializable {
 	 */
 	public PageResult(List<T> list, long totalCount, int pageSize, int pageIndex) {
 		this.list = list;
-		this.totalCount = totalCount;
+		this.totalCount = (int)totalCount;
 		this.pageSize = pageSize;
 		this.pageIndex = pageIndex;
 		this.totalPage = (int)Math.ceil((double)totalCount/pageSize);
 	}
 
-	public long getTotalCount() {
+	public int getTotalCount() {
 		return totalCount;
 	}
 
 	public void setTotalCount(long totalCount) {
-		this.totalCount = totalCount;
+		this.totalCount = (int)totalCount;
 	}
 
 	public int getPageSize() {

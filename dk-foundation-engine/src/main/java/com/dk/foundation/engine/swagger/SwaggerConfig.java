@@ -20,21 +20,33 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @RefreshScope
 public class SwaggerConfig {
+    private static final String HOST_NONE = "none";
 
     @Value("${spring.application.name}")
     String title;
 
-    @Value("${spring.application.swagger.host}")
+    @Value("${spring.application.swagger.host:none}")
     String host;
+
+    @Value("${spring.application.swagger.basePackage:com.dk}")
+    String basePackage;
+
+    @Value("${spring.application.swagger.enable:true}")
+    Boolean enable;
 
     @Bean
     @RefreshScope
     public Docket customDocket() {
-        return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.dk"))
+        Docket docket = new Docket(DocumentationType.SWAGGER_2).select()
+                .apis(RequestHandlerSelectors.basePackage(basePackage))
                 .paths(Predicates.not(PathSelectors.regex("/error.*")))
                 .build()
-                .host(host)
-                .apiInfo(apiInfo());
+                .apiInfo(apiInfo())
+                .enable(enable);
+        if(!host.equals(HOST_NONE)){
+            docket.host(host);
+        }
+        return docket;
     }
 
     private ApiInfo apiInfo() {

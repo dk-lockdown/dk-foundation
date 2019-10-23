@@ -22,12 +22,18 @@ public class RequestHeaderInterceptor implements RequestInterceptor {
     public void apply(RequestTemplate template) {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder
                 .getRequestAttributes();
+        /**
+         * 获取不到springmvc请求上下文直接返回
+         */
+        if (attributes == null) {
+            return;
+        }
+
         boolean seataTransactionATMode = true;
         if (attributes!=null) {
             HttpServletRequest request = attributes.getRequest();
             Enumeration<String> headerNames = request.getHeaderNames();
             if (headerNames != null) {
-
                 Map<String, Collection<String>> resolvedHeaders = new CaseInsensitiveKeyMap<>();
                 resolvedHeaders.putAll(template.headers());
 

@@ -14,7 +14,7 @@ public class RSAHelper {
 	public static final String SIGN_ALGORITHMS = "SHA1WithRSA";
 
 	/**
-	 * 对url 参数进行签名，生成sign（仅供传医支付平台）
+	 * 对url 参数进行签名，生成sign
 	 *
 	 * @param paramMap   url参数map
 	 * @param privatekey 私钥
