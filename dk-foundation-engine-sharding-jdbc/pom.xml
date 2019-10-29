@@ -94,11 +94,6 @@
             <artifactId>dk-foundation-engine</artifactId>
             <version>2.1-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>io.seata</groupId>
-            <artifactId>seata-spring</artifactId>
-            <version>0.9.0</version>
-        </dependency>
     </dependencies>
 
     <!-- 使用spring cloud必须引入 -->
