@@ -188,11 +188,6 @@
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
         </dependency>
-        <dependency>
-            <groupId>io.seata</groupId>
-            <artifactId>seata-spring</artifactId>
-            <version>0.9.0</version>
-        </dependency>
     </dependencies>
 
     <!-- 使用spring cloud必须引入 -->
