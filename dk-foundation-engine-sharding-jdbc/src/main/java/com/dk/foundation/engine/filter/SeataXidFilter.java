@@ -3,6 +3,7 @@ package com.dk.foundation.engine.filter;
 import com.dk.foundation.common.SeataConstants;
 import io.seata.core.context.RootContext;
 import io.shardingsphere.api.HintManager;
+import io.shardingsphere.core.hint.HintManagerHolder;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,6 +32,7 @@ public class SeataXidFilter extends OncePerRequestFilter {
             }
         }
         try{
+            HintManagerHolder.clear();
             HintManager hintManager = HintManager.getInstance();
             if(RootContext.inGlobalTransaction()){
                 hintManager.setMasterRouteOnly();
