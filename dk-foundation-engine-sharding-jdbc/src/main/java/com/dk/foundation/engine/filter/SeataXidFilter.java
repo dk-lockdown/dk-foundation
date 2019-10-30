@@ -32,7 +32,20 @@ public class SeataXidFilter extends OncePerRequestFilter {
             }
         }
         try{
+            if(RootContext.inGlobalTransaction()){
+                HintManager hintManager = HintManagerHolder.get();
+                if(hintManager==null){
+                    hintManager = HintManager.getInstance();
+                }
+                hintManager.setMasterRouteOnly();
+            }
             filterChain.doFilter(request, response);
+            if(RootContext.inGlobalTransaction()){
+                HintManager hintManager = HintManagerHolder.get();
+                if(hintManager!=null) {
+                    hintManager.close();
+                }
+            }
         } finally {
             if (bind) {
                 String unbindXid = RootContext.unbind();
