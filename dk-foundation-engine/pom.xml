@@ -191,7 +191,7 @@
         <dependency>
             <groupId>io.seata</groupId>
             <artifactId>seata-spring</artifactId>
-            <version>0.9.0</version>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
