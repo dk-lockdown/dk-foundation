@@ -115,7 +115,7 @@ public class DataSourceConfiguration implements EnvironmentAware {
 
         druidDataSource.setValidationQuery("select 'x'");
         druidDataSource.setTestWhileIdle(true);
-        druidDataSource.setTestOnBorrow(false);
+        druidDataSource.setTestOnBorrow(true);
         druidDataSource.setTestOnReturn(false);
         druidDataSource.setPoolPreparedStatements(true);
         druidDataSource.setMaxOpenPreparedStatements(20);
