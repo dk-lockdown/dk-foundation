@@ -76,7 +76,7 @@ public class PageResult<T> implements Serializable {
 		this.pageIndex = pageIndex;
 	}
 
-	public List<?> getList() {
+	public List<T> getList() {
 		return list;
 	}
 
