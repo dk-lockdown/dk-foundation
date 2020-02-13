@@ -19,6 +19,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 import java.math.BigInteger;
 import java.util.List;
+import java.util.TimeZone;
 
 /**
  * Created by duguk on 2018/1/5.
@@ -58,6 +59,7 @@ public class DefaultWebMvcConfigurerAdapter extends WebMvcConfigurationSupport {
         FastJsonHttpMessageConverter fastConvert = new FastJsonHttpMessageConverter();
 
         FastJsonConfig fastJsonConfig = new FastJsonConfig();
+        JSON.defaultTimeZone = TimeZone.getTimeZone("Asia/Shanghai");
         JSON.DEFFAULT_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss.SSSZ";
         fastJsonConfig.setSerializerFeatures(SerializerFeature.BrowserCompatible,
                 SerializerFeature.BrowserSecure,
