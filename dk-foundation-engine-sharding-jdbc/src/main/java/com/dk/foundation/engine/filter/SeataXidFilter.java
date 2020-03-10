@@ -27,9 +27,7 @@ public class SeataXidFilter extends OncePerRequestFilter {
             RootContext.bind(restXid);
             bind = true;
 
-            if (logger.isDebugEnabled()) {
-                logger.debug("bind[" + restXid + "] to RootContext");
-            }
+            logger.info("bind[" + restXid + "] to RootContext");
         }
         try{
             if(RootContext.inGlobalTransaction()){
@@ -49,9 +47,7 @@ public class SeataXidFilter extends OncePerRequestFilter {
         } finally {
             if (bind) {
                 String unbindXid = RootContext.unbind();
-                if (logger.isDebugEnabled()) {
-                    logger.debug("unbind[" + unbindXid + "] from RootContext");
-                }
+                logger.info("unbind[" + unbindXid + "] from RootContext");
                 if (!restXid.equalsIgnoreCase(unbindXid)) {
                     logger.warn("xid in change during http rest from " + restXid + " to " + unbindXid);
                     if (unbindXid != null) {
