@@ -203,6 +203,31 @@
             <artifactId>seata-spring</artifactId>
             <version>1.1.0</version>
         </dependency>
+        <dependency>
+            <groupId>io.seata</groupId>
+            <artifactId>seata-config-nacos</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.seata</groupId>
+            <artifactId>seata-config-nacos</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.seata</groupId>
+            <artifactId>seata-discovery-nacos</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.protostuff</groupId>
+            <artifactId>protostuff-core</artifactId>
+            <version>1.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.protostuff</groupId>
+            <artifactId>protostuff-runtime</artifactId>
+            <version>1.7.0</version>
+        </dependency>
     </dependencies>
 
     <!-- 使用spring cloud必须引入 -->
