@@ -75,7 +75,9 @@ public class DataSourceConfiguration implements EnvironmentAware {
 
     @Override
     public final void setEnvironment(final Environment environment) {
-        setDataSourceMap(environment);
+        if(useMasterSlaveDataSource) {
+            setDataSourceMap(environment);
+        }
     }
 
     @SuppressWarnings("unchecked")
